@@ -30,6 +30,8 @@ public class AIHi : AIBase {
         else
         {
             meshAgent.SetDestination(playerTrans.position);
+            if (Health <= 0)
+                Death();
         }
 
         if(m_inRange)

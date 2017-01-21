@@ -8,7 +8,6 @@ public class Terminus : MonoBehaviour {
     {
         if(c.CompareTag("Enemy"))
         {
-            Debug.Log(c.name);
             Health -= c.GetComponent<AIBase>().SoundDamage;
             StartCoroutine(DelayDestroy(c.gameObject));
         }
