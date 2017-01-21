@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour {
     bool RailgunPressed = false;
     bool canShoot = false;
     bool canShootFaster = false;
+    bool HammerDown = false;
+    bool HammerPressed = false;
 
     public static bool isInTimeOut = false;
 
@@ -31,6 +33,7 @@ public class PlayerControl : MonoBehaviour {
     //Prefabs
     public GameObject projectile;
     public GameObject railgun;
+    public GameObject hammer;
     //Properties
     const float SPEED = 12f;
 
@@ -54,6 +57,7 @@ public class PlayerControl : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Physics.IgnoreLayerCollision(8, 9);
+        Physics.IgnoreLayerCollision(0, 9);
         rBody = GetComponent<Rigidbody>();
         mainCam = Camera.main;
         line = GetComponent<LineRenderer>();
@@ -69,7 +73,7 @@ public class PlayerControl : MonoBehaviour {
         xLook = Input.GetAxis("RotateX");
         yLook = Input.GetAxis("RotateY");
         RailgunHeld = Input.GetAxis("RailGun") > 0.2f;
-
+        HammerDown = Input.GetAxis("Hammer") > 0.2f;
         aimLock = Input.GetButton("AimLock");
 
         Movement();
@@ -96,9 +100,29 @@ public class PlayerControl : MonoBehaviour {
             if ((canShoot && !Powerups.SpedUp) || (canShootFaster && Powerups.SpedUp))
             {
                 if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld)
-                    Instantiate(projectile, transform.position + transform.forward + transform.up / 2, transform.rotation);
+                {
+                    GameObject bullet = (GameObject)Instantiate(projectile, transform.position + transform.forward * 1.5f + transform.up / 2, transform.rotation) as GameObject;
+
+                }
                 canShoot = false;
                 canShootFaster = false;
+            }
+
+            if (HammerDown)
+            {
+                HammerPressed = true;
+                line.SetPosition(1, Vector3.forward * 8);
+            }
+            else
+            {
+                if(!RailgunHeld)
+                    line.SetPosition(1, Vector3.forward * 2f);
+            }
+
+            if(!HammerDown && HammerPressed)
+            {
+                Instantiate(hammer, transform.position + transform.forward, transform.rotation);
+                HammerPressed = false;
             }
 
             beatCounter--;
@@ -176,7 +200,7 @@ public class PlayerControl : MonoBehaviour {
         meshRend.material = defaultMat;
         rBody.useGravity = true;
         cap.enabled = true;
-        gameObject.layer = 0;
+        gameObject.layer = 11;
     }
 
     void ResetBeatCount()

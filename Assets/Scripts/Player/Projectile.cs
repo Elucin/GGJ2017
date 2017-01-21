@@ -13,6 +13,10 @@ public class Projectile : MonoBehaviour {
 	void Start () {
         timer = Time.time;
         GetComponent<Rigidbody>().velocity = transform.forward * VELOCITY;
+        if(Powerups.PoweredUp)
+        {
+            GetComponent<Rigidbody>().mass = 10f;
+        }
 	}
 	
 	// Update is called once per frame
@@ -25,7 +29,7 @@ public class Projectile : MonoBehaviour {
     {
         if(c.transform.CompareTag("Enemy"))
         {
-            c.gameObject.GetComponent<AIBase>().TakeDamage(DAMAGE);
+            c.gameObject.GetComponent<AIBase>().TakeDamage(DAMAGE + Powerups.PoweredUp.GetHashCode() * 25f);
         }
         Destroy(gameObject);
     }

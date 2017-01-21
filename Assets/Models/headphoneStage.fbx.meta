@@ -1,15 +1,42 @@
 fileFormatVersion: 2
-guid: 3131b7326d6e0b4489bbc5f1e399d1cc
-timeCreated: 1485017609
+guid: 40e284fe850b25f4ba55c14a52337e26
+timeCreated: 1485026113
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cone
+    100000: band
+    100002: earMuff
+    100004: firstHinge
+    100006: floor
+    100008: headPhone
+    100010: //RootNode
+    100012: secondHinge
+    400000: band
+    400002: earMuff
+    400004: firstHinge
+    400006: floor
+    400008: headPhone
+    400010: //RootNode
+    400012: secondHinge
+    2300000: band
+    2300002: earMuff
+    2300004: firstHinge
+    2300006: floor
+    2300008: headPhone
+    2300010: secondHinge
+    3300000: band
+    3300002: earMuff
+    3300004: firstHinge
+    3300006: floor
+    3300008: headPhone
+    3300010: secondHinge
+    4300000: floor
+    4300002: headPhone
+    4300004: secondHinge
+    4300006: firstHinge
+    4300008: band
+    4300010: earMuff
   materials:
     importMaterials: 1
     materialName: 0
@@ -34,7 +61,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -53,7 +80,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
