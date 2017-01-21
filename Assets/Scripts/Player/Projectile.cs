@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 
-    const int VELOCITY = 90;
+    const int VELOCITY = 150;
     const int DAMAGE = 25;
     const float LIFETIME = 1f;
 

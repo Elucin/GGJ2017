@@ -99,7 +99,7 @@ public class PlayerControl : MonoBehaviour {
 
             if ((canShoot && !Powerups.SpedUp) || (canShootFaster && Powerups.SpedUp))
             {
-                if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld)
+                if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld && !HammerDown)
                 {
                     GameObject bullet = (GameObject)Instantiate(projectile, transform.position + transform.forward * 1.5f + transform.up / 2, transform.rotation) as GameObject;
 
@@ -121,7 +121,7 @@ public class PlayerControl : MonoBehaviour {
 
             if(!HammerDown && HammerPressed)
             {
-                Instantiate(hammer, transform.position + transform.forward, transform.rotation);
+                Instantiate(hammer, transform.position + transform.forward / 2, transform.rotation);
                 HammerPressed = false;
             }
 
