@@ -35,6 +35,8 @@ public class Pickup : MonoBehaviour
                 Powerups.SlowDown();
             else if (name.Contains("Speed"))
                 Powerups.SpeedUp();
+            else if (name.Contains("Power"))
+                Powerups.PowerUp();
 
             DoDestroy();
         }

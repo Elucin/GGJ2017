@@ -8,10 +8,12 @@ public class Spawning : MonoBehaviour {
     const float HI_SPAWN_HEIGHT = 1.5f;
     const float MID_SPAWN_HEIGHT = 1.25f;
     const float BASS_SPAWN_HEIGHT = 1.5f;
+    const float AMP_SPAWN_HEIGHT = 1.5f;
 
     public GameObject Hi;
     public GameObject Mid;
     public GameObject Bass;
+    public GameObject Amp;
 
     private float hiTimer;
     private float hiBaseDelay = 3f;
@@ -28,12 +30,18 @@ public class Spawning : MonoBehaviour {
     private float bassRange = 5f;
     private float bassDelay;
 
+    private float ampTimer;
+    private float ampBaseDelay = 20f;
+    private float ampRange = 5f;
+    private float ampDelay;
+
     // Use this for initialization
     void Start () {
-        hiTimer = midTimer = bassTimer = Time.time;
+        hiTimer = midTimer = bassTimer = ampTimer = Time.time;
         hiDelay = Random.Range(hiBaseDelay, hiBaseDelay + hiRange);
         bassDelay = Random.Range(bassBaseDelay, bassBaseDelay + bassRange);
         midDelay = Random.Range(midBaseDelay, midBaseDelay + midRange);
+        ampDelay = Random.Range(ampBaseDelay, ampBaseDelay + ampRange);
     }
 	
 	// Update is called once per frame
@@ -73,6 +81,18 @@ public class Spawning : MonoBehaviour {
             bassTimer = Time.time;
             //Reset Delay
             midDelay = Random.Range(bassBaseDelay, bassBaseDelay + bassRange);
+        }
+
+        if (Time.time - ampTimer >= ampDelay)
+        {
+            Vector3 spawnAmpPos = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)).normalized * Random.Range(SPAWN_MIN, SPAWN_MAX);
+            spawnAmpPos.y = AMP_SPAWN_HEIGHT;
+            //Spawn
+            Instantiate(Amp, spawnAmpPos, Quaternion.identity);
+            //Reset Timer
+            ampTimer = Time.time;
+            //Reset Delay
+            ampDelay = Random.Range(ampBaseDelay, ampBaseDelay + ampRange);
         }
     }
 }

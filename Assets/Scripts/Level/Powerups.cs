@@ -13,8 +13,12 @@ public class Powerups : MonoBehaviour {
     const float SPEED_TIME = 5f;
     public static float SPEED_COEFFICIENT = 0.75f;
 
-	// Use this for initialization
-	void Start () {
+    public static bool PoweredUp = false;
+    private static float powerTimer;
+    const float POWER_TIME = 7f;
+
+    // Use this for initialization
+    void Start () {
 	   
 
 	}
@@ -30,6 +34,11 @@ public class Powerups : MonoBehaviour {
         {
             SpedUp = false;
         }
+
+        if (PoweredUp && Time.time - powerTimer >= POWER_TIME)
+        {
+            PoweredUp = false;
+        }
     }
 
     public static void SlowDown()
@@ -42,5 +51,11 @@ public class Powerups : MonoBehaviour {
     {
         speedTimer = Time.time;
         SpedUp = true;
+    }
+
+    public static void PowerUp()
+    {
+        powerTimer = Time.time;
+        PoweredUp = true;
     }
 }
