@@ -8,6 +8,8 @@ public class AIHi : AIBase {
     const float AGGRO_BUILD_RATE = 2f;
     const float AGGRO_DROPOFF_RATE = -6f;
 
+    const float NAV_AGENT_SPEED = 12f;
+
     private bool m_Aggro = false;
     private bool m_inRange = false;
     private float m_AggroMeter = 0f;
@@ -32,6 +34,11 @@ public class AIHi : AIBase {
             meshAgent.SetDestination(playerTrans.position);
             if (Health <= 0)
                 Death();
+
+            if(Powerups.SlowedDown)
+                meshAgent.speed = NAV_AGENT_SPEED * Powerups.SLOW_COEFFICIENT;
+            else
+                meshAgent.speed = NAV_AGENT_SPEED;
         }
 
         if(m_inRange)
@@ -45,11 +52,11 @@ public class AIHi : AIBase {
         } */
 
         m_AggroMeter = Mathf.Clamp(m_AggroMeter, 0f, MAX_AGGRO);
-
-        if (m_AggroMeter >= AGGRO_THRESHOLD && !m_Aggro)
-            GoAggro();
-        else if(m_AggroMeter < AGGRO_THRESHOLD && m_Aggro)
+        if (m_AggroMeter < AGGRO_THRESHOLD && m_Aggro || PlayerControl.isInTimeOut)
             GoPassive();
+        else if (m_AggroMeter >= AGGRO_THRESHOLD && !m_Aggro)
+            GoAggro();
+      
 	}
 
     void OnTriggerEnter(Collider c)

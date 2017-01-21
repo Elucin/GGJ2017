@@ -3,11 +3,15 @@ using System.Collections;
 
 public class AIBase : MonoBehaviour
 {
+    const float BASS_SPEED = 2.5f;
+    const float MID_SPEED = 5f;
+    const float HI_SPEED = 10f;
+
     [UnityEngine.SerializeField]
     protected float Health;
 
-    [UnityEngine.SerializeField]
-    protected float Speed;
+    public float Speed;
+    public float initialSpeed;
 
     public int SoundDamage;
 
@@ -27,6 +31,19 @@ public class AIBase : MonoBehaviour
     // Use this for initialization
     protected virtual void Start()
     {
+        if(name.Contains("Hi"))
+        {
+            initialSpeed = HI_SPEED;
+        }
+        else if(name.Contains("Mid"))
+        {
+            initialSpeed = MID_SPEED;
+        }
+        else if(name.Contains("Bass"))
+        {
+            initialSpeed = BASS_SPEED;
+        }
+
         originalScale = transform.localScale;
         Direction = -transform.position.normalized;
         Direction.y = 0f;
@@ -42,6 +59,11 @@ public class AIBase : MonoBehaviour
 
         if (Health <= 0)
             Death();
+
+        if (Powerups.SlowedDown)
+            Speed = initialSpeed * Powerups.SLOW_COEFFICIENT;
+        else
+            Speed = initialSpeed;
     }
 
     public void TakeDamage(float damage)
@@ -72,6 +94,15 @@ public class AIBase : MonoBehaviour
             scale = Mathf.Clamp(scale, originalScale.x, transform.localScale.x);
             transform.localScale = Vector3.one * scale;
             yield return null;
+        }
+    }
+
+    void OnCollisionEnter(Collision c)
+    {
+        if(c.transform.CompareTag("Player"))
+        {
+            c.gameObject.GetComponent<PlayerControl>().CallTimeOut();
+            TakeDamage(50f);
         }
     }
 }

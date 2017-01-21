@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
     const int BEAT_COUNT_FRAMES = 12;
+    const float TIME_OUT = 3f; //Scale based on how many deaths?
 
     float xAxis;
     float yAxis;
@@ -12,14 +13,20 @@ public class PlayerControl : MonoBehaviour {
     bool RailgunHeld;
     bool RailgunPressed = false;
     bool canShoot = false;
+    bool canShootFaster = false;
 
-    float angleH = 0f;
+    public static bool isInTimeOut = false;
+
     //Components
     Rigidbody rBody;
     LineRenderer line;
+    MeshRenderer meshRend;
+    CapsuleCollider cap;
 
     //External References
     Camera mainCam;
+    public Material ghost;
+    public Material defaultMat;
 
     //Prefabs
     public GameObject projectile;
@@ -33,19 +40,25 @@ public class PlayerControl : MonoBehaviour {
     {
         BeatTest.onBeat += ResetBeatCount;
         BeatEighthTest.onBeat += ShootOnBeat;
+        BeatSixteenthTest.onBeat += ShootFasterOnBeat;
+
     }
 
     void OnDisable()
     {
         BeatTest.onBeat -= ResetBeatCount;
         BeatEighthTest.onBeat -= ShootOnBeat;
+        BeatSixteenthTest.onBeat -= ShootFasterOnBeat;
     }
 
     // Use this for initialization
     void Start () {
+        Physics.IgnoreLayerCollision(8, 9);
         rBody = GetComponent<Rigidbody>();
         mainCam = Camera.main;
         line = GetComponent<LineRenderer>();
+        meshRend = GetComponent<MeshRenderer>();
+        cap = GetComponent<CapsuleCollider>();
 	}
 	
 	// Update is called once per frame
@@ -59,35 +72,38 @@ public class PlayerControl : MonoBehaviour {
 
         aimLock = Input.GetButton("AimLock");
 
-
-
-        if (RailgunHeld)
-        {
-            RailgunPressed = true;
-            line.SetPosition(1, Vector3.forward * 120f);   
-        }
-        else
-            line.SetPosition(1, Vector3.forward * 2f);
-
-        if (!RailgunHeld && RailgunPressed)
-        {
-            Instantiate(railgun, transform.position + transform.forward + transform.up / 2, transform.rotation);
-            RailgunPressed = false;
-            Railgun(transform.position + transform.up / 2, transform.forward);
-            //Debug.Log(beatCounter);
-        }
-
-
         Movement();
-
-        if (canShoot)
+        if (!isInTimeOut)
         {
-            if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld)
-                Instantiate(projectile, transform.position + transform.forward + transform.up / 2, transform.rotation);
-            canShoot = false;
+            if (RailgunHeld)
+            {
+                RailgunPressed = true;
+                line.SetPosition(1, Vector3.forward * 120f);
+            }
+            else
+                line.SetPosition(1, Vector3.forward * 2f);
+
+            if (!RailgunHeld && RailgunPressed)
+            {
+                Instantiate(railgun, transform.position + transform.forward + transform.up / 2, transform.rotation);
+                RailgunPressed = false;
+                Railgun(transform.position + transform.up / 2, transform.forward);
+                //Debug.Log(beatCounter);
+            }
+
+
+
+            if ((canShoot && !Powerups.SpedUp) || (canShootFaster && Powerups.SpedUp))
+            {
+                if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld)
+                    Instantiate(projectile, transform.position + transform.forward + transform.up / 2, transform.rotation);
+                canShoot = false;
+                canShootFaster = false;
+            }
+
+            beatCounter--;
+            beatCounter = Mathf.Clamp(beatCounter, 0, BEAT_COUNT_FRAMES);
         }
-        beatCounter--;
-        beatCounter = Mathf.Clamp(beatCounter, 0, BEAT_COUNT_FRAMES);
     }
 
     void Movement()
@@ -95,7 +111,7 @@ public class PlayerControl : MonoBehaviour {
         Vector3 fw = mainCam.transform.forward;
         fw.y = 0;
         Vector3 right = mainCam.transform.right;
-        rBody.velocity = (fw * SPEED * yAxis) + (right * SPEED * xAxis) + new Vector3(0, rBody.velocity.y, 0);
+        rBody.velocity = ((fw * SPEED * yAxis) + (right * SPEED * xAxis)) * (1 + Powerups.SpedUp.GetHashCode() * Powerups.SPEED_COEFFICIENT) + new Vector3(0, rBody.velocity.y, 0);
        
 
         Vector3 targetDirection = fw * -yLook + right * xLook;
@@ -144,6 +160,25 @@ public class PlayerControl : MonoBehaviour {
         }
     }
 
+    public void CallTimeOut()
+    {
+        StartCoroutine(TimeOut());
+    }
+
+    IEnumerator TimeOut()
+    {
+        gameObject.layer = 9;
+        rBody.useGravity = false;
+        meshRend.material = ghost;
+        isInTimeOut = true;
+        yield return new WaitForSeconds(TIME_OUT);
+        isInTimeOut = false;
+        meshRend.material = defaultMat;
+        rBody.useGravity = true;
+        cap.enabled = true;
+        gameObject.layer = 0;
+    }
+
     void ResetBeatCount()
     {
         beatCounter = BEAT_COUNT_FRAMES;
@@ -152,6 +187,11 @@ public class PlayerControl : MonoBehaviour {
     void ShootOnBeat()
     {
         canShoot = true;
+    }
+
+    void ShootFasterOnBeat()
+    {
+        canShootFaster = true;
     }
 }
 
