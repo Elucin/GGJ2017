@@ -20,6 +20,9 @@ public class PlayerControl : MonoBehaviour {
     bool canShootFaster = false;
     bool HammerDown = false;
     bool HammerPressed = false;
+
+    bool cooldown = true;
+    const float COOLDOWN_LENGTH = 0.3f;
     Camera_Shake camShake;
     public static bool isInTimeOut = false;
 
@@ -100,7 +103,7 @@ public class PlayerControl : MonoBehaviour {
         Movement();
         if (!isInTimeOut)
         {
-            if (RailgunHeld)
+            if (RailgunHeld && cooldown)
             {
                 RailgunPressed = true;
                 line.SetPosition(1, Vector3.forward * 120f);
@@ -115,7 +118,7 @@ public class PlayerControl : MonoBehaviour {
                 Instantiate(railgun, transform.position + transform.forward + transform.up / 2, transform.rotation);
                 RailgunPressed = false;
                 Railgun(transform.position + transform.up / 2, transform.forward);
-                //Debug.Log(beatCounter);
+                StartCoroutine(Cooldown());
             }
 
 
@@ -148,7 +151,7 @@ public class PlayerControl : MonoBehaviour {
                 canShootFaster = false;
             }
 
-            if (HammerDown)
+            if (HammerDown && cooldown)
             {
                 HammerPressed = true;
                 line.SetPosition(1, Vector3.forward * 8);
@@ -164,6 +167,7 @@ public class PlayerControl : MonoBehaviour {
                 //rBody.AddForce(-transform.forward * 2000f, ForceMode.Impulse);
                 Instantiate(hammer, transform.position + transform.forward * 2, transform.rotation);
                 HammerPressed = false;
+                StartCoroutine(Cooldown());
             }
 
             beatCounter--;
@@ -233,9 +237,16 @@ public class PlayerControl : MonoBehaviour {
             transform.localEulerAngles += transform.up * -xAxis;
     }
 
+    IEnumerator Cooldown()
+    {
+        cooldown = false;
+        yield return new WaitForSeconds(COOLDOWN_LENGTH);
+        cooldown = true;
+    }
+
     void Railgun(Vector3 pos, Vector3 dir)
     {
-        RaycastHit[] hit = Physics.RaycastAll(pos, dir, 120f);
+        RaycastHit[] hit = Physics.RaycastAll(pos, dir, 120f,enemiesOnly ,QueryTriggerInteraction.Ignore);
         foreach(RaycastHit h in hit)
         {
             if (h.transform.CompareTag("Enemy"))
@@ -263,6 +274,8 @@ public class PlayerControl : MonoBehaviour {
         cap.enabled = true;
         gameObject.layer = 11;
     }
+
+
 
     void ResetBeatCount()
     {

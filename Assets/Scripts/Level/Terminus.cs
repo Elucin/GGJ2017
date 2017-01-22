@@ -4,7 +4,13 @@ using System.Collections;
 public class Terminus : MonoBehaviour {
     public float Health = 100f;
     public Animator animDude;
+    public GameObject particles;
+    AudioSource audioS;
 
+    void Start()
+    {
+        audioS = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (Health >= 80f)
@@ -35,6 +41,10 @@ public class Terminus : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         if (g != null)
         {
+            if (audioS.isPlaying)
+                audioS.Stop();
+            audioS.Play();
+            Instantiate(particles, g.transform.position, Quaternion.identity);
             Health -= g.GetComponent<AIBase>().SoundDamage;
             Destroy(g);
         }
