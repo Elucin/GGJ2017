@@ -21,12 +21,6 @@ public class Pickup : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnCollisionEnter(Collision c)
     {
         if (c.transform.CompareTag("Player"))
@@ -49,6 +43,6 @@ public class Pickup : MonoBehaviour
 
     void Bounce()
     {
-        rb.AddForce(Vector3.up * 2f, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 2f, ForceMode.Impulse);
     }
 }

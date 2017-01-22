@@ -4,11 +4,11 @@ using System.Collections;
 public class AIHi : AIBase {
 
     const float MAX_AGGRO = 15f;
-    const float AGGRO_THRESHOLD = 5f;
+    const float AGGRO_THRESHOLD = 4f;
     const float AGGRO_BUILD_RATE = 2f;
     const float AGGRO_DROPOFF_RATE = -6f;
 
-    const float NAV_AGENT_SPEED = 12f;
+    const float NAV_AGENT_SPEED = 14f;
 
     private bool m_Aggro = false;
     private bool m_inRange = false;

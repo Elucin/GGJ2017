@@ -16,8 +16,8 @@ public class Spawning : MonoBehaviour {
     public GameObject Amp;
 
     private float hiTimer;
-    private float hiBaseDelay = 3f;
-    private float hiRange = 2f;
+    private float hiBaseDelay = 2f;
+    private float hiRange = 1.5f;
     private float hiDelay;
 
     private float midTimer;
