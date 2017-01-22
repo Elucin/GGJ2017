@@ -1,48 +1,46 @@
 fileFormatVersion: 2
-guid: e260b378409ae6e47aa518cd9e15a730
-timeCreated: 1485047371
+guid: 222020705e0371445b4ab8f73c4914f6
+timeCreated: 1485075737
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Arm_L_geo
-    100002: Arm_R_geo
-    100004: //RootNode
-    100006: Bass
-    100008: Body_geo
-    100010: jnt_Chest
-    100012: jnt_R_Arm
-    100014: jnt_R_Arm1
-    100016: jnt_R_Elbow
-    100018: jnt_R_Elbow 1
-    100020: jnt_R_Hand
-    100022: jnt_R_Hand 1
-    400000: Arm_L_geo
-    400002: Arm_R_geo
-    400004: //RootNode
-    400006: Bass
-    400008: Body_geo
-    400010: jnt_Chest
-    400012: jnt_R_Arm
-    400014: jnt_R_Arm1
-    400016: jnt_R_Elbow
-    400018: jnt_R_Elbow 1
-    400020: jnt_R_Hand
-    400022: jnt_R_Hand 1
-    2300000: Arm_L_geo
-    2300002: Arm_R_geo
-    2300004: Body_geo
-    3300000: Arm_L_geo
-    3300002: Arm_R_geo
-    3300004: Body_geo
-    4300000: Body_geo
-    4300002: Arm_R_geo
-    4300004: Arm_L_geo
-    7400000: BassLoop
+    100000: Geo
+    100002: jnt_Body
+    100004: jnt_L_Wing
+    100006: jnt_L_Wingtip
+    100008: jnt_R_Wing
+    100010: jnt_R_Wingtip
+    100012: jnt_Tail
+    100014: jnt_TailTip
+    100016: pPlane3
+    100018: pPlane4
+    100020: pPlane5
+    100022: pPyramid1
+    100024: //RootNode
+    400000: Geo
+    400002: jnt_Body
+    400004: jnt_L_Wing
+    400006: jnt_L_Wingtip
+    400008: jnt_R_Wing
+    400010: jnt_R_Wingtip
+    400012: jnt_Tail
+    400014: jnt_TailTip
+    400016: pPlane3
+    400018: pPlane4
+    400020: pPlane5
+    400022: pPyramid1
+    400024: //RootNode
+    4300000: pPlane3
+    4300002: pPlane4
+    4300004: pPlane5
+    4300006: pPyramid1
+    7400000: Flap
     9500000: //RootNode
-    13700000: Arm_L_geo
-    13700002: Arm_R_geo
-    13700004: Body_geo
+    13700000: pPlane3
+    13700002: pPlane4
+    13700004: pPlane5
+    13700006: pPyramid1
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,10 +63,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: BassLoop
+      name: Flap
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -91,27 +89,29 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Bass
+      - path: Geo
         weight: 1
-      - path: Bass/Arm_L_geo
+      - path: Geo/pPlane3
         weight: 1
-      - path: Bass/Arm_R_geo
+      - path: Geo/pPlane4
         weight: 1
-      - path: Bass/Body_geo
+      - path: Geo/pPlane5
         weight: 1
-      - path: jnt_Chest
+      - path: Geo/pPyramid1
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm
+      - path: jnt_Body
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm/jnt_R_Elbow
+      - path: jnt_Body/jnt_L_Wing
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm/jnt_R_Elbow/jnt_R_Hand
+      - path: jnt_Body/jnt_L_Wing/jnt_L_Wingtip
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm1
+      - path: jnt_Body/jnt_R_Wing
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm1/jnt_R_Elbow 1
+      - path: jnt_Body/jnt_R_Wing/jnt_R_Wingtip
         weight: 1
-      - path: jnt_Chest/jnt_R_Arm1/jnt_R_Elbow 1/jnt_R_Hand 1
+      - path: jnt_Body/jnt_Tail
+        weight: 1
+      - path: jnt_Body/jnt_Tail/jnt_TailTip
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -119,10 +119,10 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.5
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -150,7 +150,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: jnt_Chest
+    rootMotionBoneName: jnt_Body
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

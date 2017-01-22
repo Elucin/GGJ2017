@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
     const int BEAT_COUNT_FRAMES = 12;
     const float TIME_OUT = 3.0f; //Scale based on how many deaths?
-
+    float originalY;
     public static float LiveTime = 0;
 
     int deathCount = 0;
@@ -26,9 +26,9 @@ public class PlayerControl : MonoBehaviour {
     //Components
     Rigidbody rBody;
     LineRenderer line;
-    MeshRenderer meshRend;
+    MeshRenderer[] meshRend;
     CapsuleCollider cap;
-
+    Animator anim;
     //External References
     Camera mainCam;
     public Material ghost;
@@ -66,12 +66,14 @@ public class PlayerControl : MonoBehaviour {
         Physics.IgnoreLayerCollision(0, 12);
         Physics.IgnoreLayerCollision(9, 12);
         Physics.IgnoreLayerCollision(10, 12);
+        originalY = transform.position.y;
         rBody = GetComponent<Rigidbody>();
         mainCam = Camera.main;
         line = GetComponent<LineRenderer>();
-        meshRend = GetComponent<MeshRenderer>();
+        meshRend = GetComponentsInChildren<MeshRenderer>();
         cap = GetComponent<CapsuleCollider>();
         camShake = GameObject.FindObjectOfType<Camera_Shake>();
+        anim = GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -85,6 +87,9 @@ public class PlayerControl : MonoBehaviour {
         HammerDown = Input.GetAxis("Hammer") > 0.2f || Input.GetButton("Hammer") ;
         aimLock = Input.GetButton("AimLock");
 
+        anim.SetBool("RailgunHeld", RailgunHeld);
+        anim.SetBool("Firing", Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f);
+        anim.SetBool("TimeOut", isInTimeOut);
         Movement();
         if (!isInTimeOut)
         {
@@ -209,11 +214,13 @@ public class PlayerControl : MonoBehaviour {
     {
         gameObject.layer = 9;
         rBody.useGravity = false;
-        meshRend.material = ghost;
+        foreach(MeshRenderer r in meshRend)
+            r.material = ghost;
         isInTimeOut = true;
         yield return new WaitForSeconds(TIME_OUT + (0.25f * deathCount));
         isInTimeOut = false;
-        meshRend.material = defaultMat;
+        foreach (MeshRenderer r in meshRend)
+            r.material = defaultMat;
         rBody.useGravity = true;
         cap.enabled = true;
         gameObject.layer = 11;

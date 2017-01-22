@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: eb2a35bc149f2b9449e6d873b5c81a11
+timeCreated: 1485079027
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: Hammer
+    100004: head
+    100006: pCone1
+    100008: //RootNode
+    100010: polySurface3
+    100012: polySurface5
+    100014: polySurface6
+    100016: polySurface7
+    100018: pSphere1
+    100020: pSphere2
+    100022: pSphere3
+    100024: stick
+    400000: Body
+    400002: Hammer
+    400004: head
+    400006: pCone1
+    400008: //RootNode
+    400010: polySurface3
+    400012: polySurface5
+    400014: polySurface6
+    400016: polySurface7
+    400018: pSphere1
+    400020: pSphere2
+    400022: pSphere3
+    400024: stick
+    2300000: head
+    2300002: pCone1
+    2300004: polySurface3
+    2300006: polySurface5
+    2300008: polySurface6
+    2300010: polySurface7
+    2300012: pSphere1
+    2300014: pSphere2
+    2300016: pSphere3
+    3300000: head
+    3300002: pCone1
+    3300004: polySurface3
+    3300006: polySurface5
+    3300008: polySurface6
+    3300010: polySurface7
+    3300012: pSphere1
+    3300014: pSphere2
+    3300016: pSphere3
+    4300000: head
+    4300002: pSphere2
+    4300004: pSphere3
+    4300006: polySurface3
+    4300008: polySurface5
+    4300010: polySurface6
+    4300012: polySurface7
+    4300014: pSphere1
+    4300016: pCone1
+    7400000: Ready
+    7400002: FireFast
+    7400004: Recover
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Ready
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/pCone1
+        weight: 1
+      - path: Body/pSphere1
+        weight: 1
+      - path: Hammer
+        weight: 1
+      - path: Hammer/head
+        weight: 1
+      - path: Hammer/stick
+        weight: 1
+      - path: Hammer/stick/polySurface3
+        weight: 1
+      - path: Hammer/stick/polySurface5
+        weight: 1
+      - path: Hammer/stick/polySurface6
+        weight: 1
+      - path: Hammer/stick/polySurface7
+        weight: 1
+      - path: Hammer/stick/pSphere2
+        weight: 1
+      - path: Hammer/stick/pSphere3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: FireFast
+      takeName: Take 001
+      firstFrame: 9
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/pCone1
+        weight: 1
+      - path: Body/pSphere1
+        weight: 1
+      - path: Hammer
+        weight: 1
+      - path: Hammer/head
+        weight: 1
+      - path: Hammer/stick
+        weight: 1
+      - path: Hammer/stick/polySurface3
+        weight: 1
+      - path: Hammer/stick/polySurface5
+        weight: 1
+      - path: Hammer/stick/polySurface6
+        weight: 1
+      - path: Hammer/stick/polySurface7
+        weight: 1
+      - path: Hammer/stick/pSphere2
+        weight: 1
+      - path: Hammer/stick/pSphere3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: Recover
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/pCone1
+        weight: 1
+      - path: Body/pSphere1
+        weight: 1
+      - path: Hammer
+        weight: 1
+      - path: Hammer/head
+        weight: 1
+      - path: Hammer/stick
+        weight: 1
+      - path: Hammer/stick/polySurface3
+        weight: 1
+      - path: Hammer/stick/polySurface5
+        weight: 1
+      - path: Hammer/stick/polySurface6
+        weight: 1
+      - path: Hammer/stick/polySurface7
+        weight: 1
+      - path: Hammer/stick/pSphere2
+        weight: 1
+      - path: Hammer/stick/pSphere3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: afa5acd5f0fe3184caa0a63f33cbab4a,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
