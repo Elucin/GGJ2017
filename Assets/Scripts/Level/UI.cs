@@ -30,13 +30,13 @@ public class UI : MonoBehaviour {
             minutes = minuteCount.ToString();
         }
 
-        if((int)PlayerControl.LiveTime <= 9)
+        if((int)PlayerControl.LiveTime - 60 * minuteCount <= 9)
         {
-            seconds = "0" + ((int)PlayerControl.LiveTime).ToString();
+            seconds = "0" + (((int)PlayerControl.LiveTime) - 60 * minuteCount).ToString();
         }
         else
         {
-            seconds = ((int)PlayerControl.LiveTime).ToString();
+            seconds = ((int)PlayerControl.LiveTime - 60 * minuteCount).ToString();
         }
 
         if((PlayerControl.LiveTime - (int)PlayerControl.LiveTime) * 100f <= 9)
@@ -49,6 +49,7 @@ public class UI : MonoBehaviour {
 
         timer.text = minutes + ":" + seconds + ":" + milliseconds;
         minuteCount = (int)(PlayerControl.LiveTime / 60f);
+
 
 	}
 }

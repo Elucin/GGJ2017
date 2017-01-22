@@ -96,6 +96,7 @@ public class PlayerControl : MonoBehaviour {
         anim.SetBool("RailgunHeld", RailgunHeld);
         anim.SetBool("Firing", Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f);
         anim.SetBool("TimeOut", isInTimeOut);
+        anim.SetBool("HammerHeld", HammerDown);
         Movement();
         if (!isInTimeOut)
         {
