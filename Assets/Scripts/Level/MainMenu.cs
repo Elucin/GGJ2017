@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour {
 	void Update () {
 	    if(Input.GetButtonDown("Submit"))
         {
+            PlayerControl.LiveTime = 0f;
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
 	}

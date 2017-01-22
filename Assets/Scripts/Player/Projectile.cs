@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour {
             Destroy(gameObject);
         if (target != null)
         {
-            GetComponent<Rigidbody>().AddForce((target.transform.position - transform.position) * 50, ForceMode.Acceleration);
+            GetComponent<Rigidbody>().AddForce((target.transform.position - transform.position) * 70, ForceMode.Acceleration);
             GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * VELOCITY;
             if (Vector3.Angle(transform.forward, target.transform.position - transform.position) > 90f)
                 target = null;

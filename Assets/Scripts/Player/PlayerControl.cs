@@ -126,7 +126,7 @@ public class PlayerControl : MonoBehaviour {
                 {
                     GameObject target = null;
                     float angle = 25f;
-                    RaycastHit[] enemies = Physics.SphereCastAll(transform.position, 2f, transform.forward, 100f, enemiesOnly, QueryTriggerInteraction.Ignore);
+                    RaycastHit[] enemies = Physics.SphereCastAll(transform.position, 3f, transform.forward, 100f, enemiesOnly, QueryTriggerInteraction.Ignore);
 
                     foreach(RaycastHit r in enemies)
                     {
@@ -239,9 +239,7 @@ public class PlayerControl : MonoBehaviour {
         foreach(RaycastHit h in hit)
         {
             if (h.transform.CompareTag("Enemy"))
-                h.transform.GetComponent<AIBase>().TakeDamage(1000);
-                
-
+                h.transform.GetComponent<AIBase>().TakeDamage(100f + Powerups.PoweredUp.GetHashCode() * 1000f);
         }
     }
 

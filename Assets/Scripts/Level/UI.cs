@@ -7,6 +7,8 @@ public class UI : MonoBehaviour {
     public Image HealthBar;
     public Terminus terminus;
     public Text timer;
+    public Image pause;
+    public AudioSource music;
     private float millisecondsCount;
     private int minuteCount = 0;
 	// Use this for initialization
@@ -50,6 +52,9 @@ public class UI : MonoBehaviour {
         timer.text = minutes + ":" + seconds + ":" + milliseconds;
         minuteCount = (int)(PlayerControl.LiveTime / 60f);
 
-
+        if(Input.GetButtonDown("Start"))
+        {
+            pause.enabled = !pause.enabled;
+        }
 	}
 }

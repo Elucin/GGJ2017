@@ -32,7 +32,7 @@ public class Terminus : MonoBehaviour {
 
     IEnumerator DelayDestroy(GameObject g)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         if (g != null)
         {
             Health -= g.GetComponent<AIBase>().SoundDamage;
