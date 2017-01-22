@@ -1,0 +1,881 @@
+fileFormatVersion: 2
+guid: 4da9205c5666aec4986a64d93a655506
+timeCreated: 1485042890
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Music_Beat_Sheet_pxl_0
+    21300002: Music_Beat_Sheet_pxl_1
+    21300004: Music_Beat_Sheet_pxl_2
+    21300006: Music_Beat_Sheet_pxl_3
+    21300008: Music_Beat_Sheet_pxl_4
+    21300010: Music_Beat_Sheet_pxl_5
+    21300012: Music_Beat_Sheet_pxl_6
+    21300014: Music_Beat_Sheet_pxl_7
+    21300016: Music_Beat_Sheet_pxl_8
+    21300018: Music_Beat_Sheet_pxl_9
+    21300020: Music_Beat_Sheet_pxl_10
+    21300022: Music_Beat_Sheet_pxl_11
+    21300024: Music_Beat_Sheet_pxl_12
+    21300026: Music_Beat_Sheet_pxl_13
+    21300028: Music_Beat_Sheet_pxl_14
+    21300030: Music_Beat_Sheet_pxl_15
+    21300032: Music_Beat_Sheet_pxl_16
+    21300034: Music_Beat_Sheet_pxl_17
+    21300036: Music_Beat_Sheet_pxl_18
+    21300038: Music_Beat_Sheet_pxl_19
+    21300040: Music_Beat_Sheet_pxl_20
+    21300042: Music_Beat_Sheet_pxl_21
+    21300044: Music_Beat_Sheet_pxl_22
+    21300046: Music_Beat_Sheet_pxl_23
+    21300048: Music_Beat_Sheet_pxl_24
+    21300050: Music_Beat_Sheet_pxl_25
+    21300052: Music_Beat_Sheet_pxl_26
+    21300054: Music_Beat_Sheet_pxl_27
+    21300056: Music_Beat_Sheet_pxl_28
+    21300058: Music_Beat_Sheet_pxl_29
+    21300060: Music_Beat_Sheet_pxl_30
+    21300062: Music_Beat_Sheet_pxl_31
+    21300064: Music_Beat_Sheet_pxl_32
+    21300066: Music_Beat_Sheet_pxl_33
+    21300068: Music_Beat_Sheet_pxl_34
+    21300070: Music_Beat_Sheet_pxl_35
+    21300072: Music_Beat_Sheet_pxl_36
+    21300074: Music_Beat_Sheet_pxl_37
+    21300076: Music_Beat_Sheet_pxl_38
+    21300078: Music_Beat_Sheet_pxl_39
+    21300080: Music_Beat_Sheet_pxl_40
+    21300082: Music_Beat_Sheet_pxl_41
+    21300084: Music_Beat_Sheet_pxl_42
+    21300086: Music_Beat_Sheet_pxl_43
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Music_Beat_Sheet_pxl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -91}
+        - {x: 2, y: 91}
+        - {x: -3, y: 91}
+        - {x: -3, y: -91}
+    - name: Music_Beat_Sheet_pxl_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: 66}
+        - {x: -1.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 9.5, y: 88}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -41}
+        - {x: -7, y: -91}
+        - {x: 2, y: -91}
+        - {x: 8, y: 16}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: 64}
+        - {x: -5.5, y: 63}
+        - {x: -1.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 9.5, y: 11}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -73}
+        - {x: -8, y: -91}
+        - {x: 2, y: -91}
+        - {x: 8, y: 26}
+        - {x: 8, y: 90}
+        - {x: 6, y: 91}
+    - name: Music_Beat_Sheet_pxl_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -57}
+        - {x: -5.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 9.5, y: 6}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -73}
+        - {x: -8, y: -91}
+        - {x: 4, y: -91}
+        - {x: 8, y: -6}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -72}
+        - {x: -6.5, y: -91}
+        - {x: 6.5, y: -91}
+        - {x: 9.5, y: -26}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -85}
+        - {x: -3, y: -91}
+        - {x: 8, y: -91}
+        - {x: 8, y: 89}
+        - {x: 7, y: 91}
+    - name: Music_Beat_Sheet_pxl_9
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 46}
+        - {x: 9.5, y: 87}
+        - {x: 3.5, y: 91}
+        - {x: -7.5, y: 91}
+        - {x: -7.5, y: -74}
+        - {x: -5.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 9.5, y: -12}
+        - {x: 9.5, y: 44}
+        - {x: 7.5, y: 45}
+    - name: Music_Beat_Sheet_pxl_10
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -23}
+        - {x: 8, y: -23}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_11
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -46}
+        - {x: -2.5, y: -91}
+        - {x: 5.5, y: -91}
+        - {x: 9.5, y: -53}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -48}
+        - {x: 8, y: -48}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_13
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -82}
+        - {x: -6.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 9.5, y: -59}
+        - {x: 9.5, y: 88}
+        - {x: 4.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -72}
+        - {x: 8, y: -72}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_15
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -82}
+        - {x: -1.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -91}
+        - {x: 8, y: -91}
+        - {x: 8, y: 91}
+    - name: Music_Beat_Sheet_pxl_17
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: -46}
+        - {x: 3.5, y: -45}
+        - {x: 6.5, y: -45}
+        - {x: 9.5, y: -42}
+        - {x: 9.5, y: 91}
+        - {x: -5.5, y: 91}
+        - {x: -7.5, y: 88}
+        - {x: -7.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: -49}
+    - name: Music_Beat_Sheet_pxl_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 91}
+        - {x: -9, y: 89}
+        - {x: -9, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 91}
+    - name: Music_Beat_Sheet_pxl_19
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 91}
+        - {x: -7.5, y: 89}
+        - {x: -7.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_20
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 91}
+        - {x: -9, y: 88}
+        - {x: -9, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 91}
+    - name: Music_Beat_Sheet_pxl_21
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_22
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -91}
+        - {x: 7, y: -91}
+        - {x: 9, y: -90}
+        - {x: 9, y: 91}
+    - name: Music_Beat_Sheet_pxl_23
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 91}
+        - {x: -7.5, y: 83}
+        - {x: -7.5, y: -91}
+        - {x: 7.5, y: -91}
+        - {x: 9.5, y: -89}
+        - {x: 9.5, y: 83}
+        - {x: 7.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -36}
+        - {x: -3, y: -40}
+        - {x: -5, y: -40}
+        - {x: -9, y: -43}
+        - {x: -9, y: -88}
+        - {x: -5, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 89}
+        - {x: 7, y: 91}
+    - name: Music_Beat_Sheet_pxl_25
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 91}
+        - {x: -7.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_26
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 91}
+        - {x: -9, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 91}
+    - name: Music_Beat_Sheet_pxl_27
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5, y: -60}
+        - {x: 5.5, y: -59}
+        - {x: 9.5, y: -56}
+        - {x: 9.5, y: 75}
+        - {x: 3.5, y: 89}
+        - {x: -2.5, y: 89}
+        - {x: -5.5, y: 85}
+        - {x: -7.5, y: 72}
+        - {x: -7.5, y: -91}
+        - {x: 3.5, y: -91}
+        - {x: 5.5, y: -90}
+        - {x: 9.5, y: -87}
+        - {x: 9.5, y: -62}
+        - {x: 2.5, y: -60}
+    - name: Music_Beat_Sheet_pxl_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 83}
+        - {x: -1, y: 83}
+        - {x: -8, y: 74}
+        - {x: -8, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 50}
+        - {x: 4, y: 82}
+    - name: Music_Beat_Sheet_pxl_29
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 91}
+        - {x: -4.5, y: 59}
+        - {x: -7.5, y: 7}
+        - {x: -7.5, y: -40}
+        - {x: -4.5, y: -41}
+        - {x: -7.5, y: -46}
+        - {x: -7.5, y: -88}
+        - {x: -6.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 50}
+        - {x: 4.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_30
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 59}
+        - {x: -8, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: 22}
+        - {x: 4, y: 59}
+    - name: Music_Beat_Sheet_pxl_31
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: -83}
+        - {x: 9.5, y: 8}
+        - {x: 3.5, y: 91}
+        - {x: -2.5, y: 91}
+        - {x: -7.5, y: 32}
+        - {x: -7.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: -90}
+        - {x: 8.5, y: -88}
+        - {x: 5.5, y: -87}
+        - {x: 7.5, y: -86}
+    - name: Music_Beat_Sheet_pxl_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: -80}
+        - {x: 9, y: 13}
+        - {x: 5, y: 34}
+        - {x: -6, y: 34}
+        - {x: -8, y: 11}
+        - {x: -8, y: -91}
+        - {x: 8, y: -91}
+        - {x: 7, y: -88}
+        - {x: 3, y: -87}
+        - {x: 6, y: -85}
+    - name: Music_Beat_Sheet_pxl_33
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 16}
+        - {x: -1.5, y: 15}
+        - {x: -7.5, y: -8}
+        - {x: -7.5, y: -90}
+        - {x: -6.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: 7}
+        - {x: 3.5, y: 16}
+      - - {x: 0.5, y: 16}
+        - {x: 3.5, y: 17}
+        - {x: 3.5, y: 91}
+        - {x: -1.5, y: 91}
+        - {x: -1.5, y: 18}
+    - name: Music_Beat_Sheet_pxl_34
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: -78}
+        - {x: 9, y: 10}
+        - {x: -1, y: 10}
+        - {x: -8, y: 1}
+        - {x: -8, y: -88}
+        - {x: 0, y: -91}
+        - {x: 9, y: -91}
+        - {x: 9, y: -90}
+        - {x: 6, y: -87}
+        - {x: 8, y: -80}
+    - name: Music_Beat_Sheet_pxl_35
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: -8}
+        - {x: -6.5, y: -17}
+        - {x: -6.5, y: -88}
+        - {x: -3.5, y: -91}
+        - {x: 9.5, y: -91}
+        - {x: 9.5, y: -8}
+      - - {x: 0.5, y: -8}
+        - {x: 3.5, y: -7}
+        - {x: 3.5, y: 91}
+        - {x: -1.5, y: 91}
+        - {x: -1.5, y: -6}
+    - name: Music_Beat_Sheet_pxl_36
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 91}
+        - {x: -7, y: 31}
+        - {x: -7, y: -91}
+        - {x: 8, y: -91}
+        - {x: 8, y: 32}
+        - {x: 3, y: 91}
+    - name: Music_Beat_Sheet_pxl_37
+      rect:
+        serializedVersion: 2
+        x: 4625
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 91}
+        - {x: -2.5, y: 91}
+        - {x: -5.5, y: 1}
+        - {x: -5.5, y: -91}
+        - {x: 2.5, y: -91}
+        - {x: 7.5, y: -88}
+        - {x: 7.5, y: -52}
+        - {x: 6.5, y: -49}
+    - name: Music_Beat_Sheet_pxl_38
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 91}
+        - {x: -6, y: 0}
+        - {x: -6, y: -91}
+        - {x: 5, y: -91}
+        - {x: 5, y: 44}
+        - {x: 3, y: 91}
+    - name: Music_Beat_Sheet_pxl_39
+      rect:
+        serializedVersion: 2
+        x: 4875
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 91}
+        - {x: -1.5, y: 91}
+        - {x: -3.5, y: -35}
+        - {x: -3.5, y: -86}
+        - {x: 0.5, y: -91}
+        - {x: 6.5, y: -91}
+        - {x: 6.5, y: -55}
+    - name: Music_Beat_Sheet_pxl_40
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 91}
+        - {x: -3, y: 15}
+        - {x: -3, y: -91}
+        - {x: 4, y: -91}
+        - {x: 4, y: -3}
+        - {x: 3, y: 91}
+    - name: Music_Beat_Sheet_pxl_41
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: 91}
+        - {x: -2.5, y: 35}
+        - {x: -2.5, y: -91}
+        - {x: 2.5, y: -91}
+        - {x: 3.5, y: -90}
+        - {x: 3.5, y: 91}
+    - name: Music_Beat_Sheet_pxl_42
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: -91}
+        - {x: 3, y: 91}
+        - {x: -2, y: 91}
+        - {x: -2, y: -91}
+    - name: Music_Beat_Sheet_pxl_43
+      rect:
+        serializedVersion: 2
+        x: 5375
+        y: 0
+        width: 125
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: -91}
+        - {x: 3.5, y: 91}
+        - {x: -1.5, y: 91}
+        - {x: -1.5, y: -91}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
