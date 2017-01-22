@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 79e699c253ce5d2498e2ff545c1fab93
+timeCreated: 1485105167
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dmg_Sheet_0
+    21300002: Dmg_Sheet_1
+    21300004: Dmg_Sheet_2
+    21300006: Dmg_Sheet_3
+    21300008: Dmg_Sheet_4
+    21300010: Dmg_Sheet_5
+    21300012: Dmg_Sheet_6
+    21300014: Dmg_Sheet_7
+    21300016: Dmg_Sheet_8
+    21300018: Dmg_Sheet_9
+    21300020: Dmg_Sheet_10
+    21300022: Dmg_Sheet_11
+    21300024: Dmg_Sheet_12
+    21300026: Dmg_Sheet_13
+    21300028: Dmg_Sheet_14
+    21300030: Dmg_Sheet_15
+    21300032: Dmg_Sheet_16
+    21300034: Dmg_Sheet_17
+    21300036: Dmg_Sheet_18
+    21300038: Dmg_Sheet_19
+    21300040: Dmg_Sheet_20
+    21300042: Dmg_Sheet_21
+    21300044: Dmg_Sheet_22
+    21300046: Dmg_Sheet_23
+    21300048: Dmg_Sheet_24
+    21300050: Dmg_Sheet_25
+    21300052: Dmg_Sheet_26
+    21300054: Dmg_Sheet_27
+    21300056: Dmg_Sheet_28
+    21300058: Dmg_Sheet_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Dmg_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -88, y: 4.666626}
+        - {x: -11, y: -57.333374}
+        - {x: 8, y: -62.333374}
+        - {x: 76, y: -62.333374}
+        - {x: 85, y: -53.333374}
+        - {x: 85, y: 67.666626}
+        - {x: -11, y: 67.666626}
+        - {x: -88, y: 24.666626}
+    - name: Dmg_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.333344, y: 68.666626}
+        - {x: -97.66666, y: 15.666626}
+        - {x: -97.66666, y: 1.666626}
+        - {x: -4.6666565, y: -58.333374}
+        - {x: 78.33334, y: -58.333374}
+        - {x: 78.33334, y: 68.666626}
+    - name: Dmg_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85.66669, y: -13.333374}
+        - {x: 85.66669, y: 60.666626}
+        - {x: 81.66669, y: 68.666626}
+        - {x: 3.666687, y: 68.666626}
+        - {x: -103.33331, y: 16.666626}
+        - {x: -103.33331, y: -5.333374}
+        - {x: 0.666687, y: -54.333374}
+        - {x: 66.66669, y: -54.333374}
+        - {x: 85.66669, y: -50.333374}
+        - {x: 85.66669, y: -33.333374}
+        - {x: 82.66669, y: -31.333374}
+    - name: Dmg_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 69.666626}
+        - {x: -110, y: -0.33337402}
+        - {x: -110, y: -4.333374}
+        - {x: -109, y: -5.333374}
+        - {x: -94, y: -9.333374}
+        - {x: 5, y: -52.333374}
+        - {x: 80, y: -52.333374}
+        - {x: 88, y: -35.333374}
+        - {x: 88, y: 60.666626}
+        - {x: 83, y: 69.666626}
+    - name: Dmg_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83.333374, y: -22.333374}
+        - {x: 88.333374, y: 40.666626}
+        - {x: 59.333374, y: 69.666626}
+        - {x: 13.333374, y: 69.666626}
+        - {x: -9.666626, y: 61.666626}
+        - {x: -106.666626, y: -3.333374}
+        - {x: -106.666626, y: -10.333374}
+        - {x: -79.666626, y: -33.333374}
+        - {x: -2.666626, y: -49.333374}
+        - {x: 82.333374, y: -49.333374}
+        - {x: 89.333374, y: -36.333374}
+        - {x: 89.333374, y: -22.333374}
+        - {x: 88.333374, y: -21.333374}
+    - name: Dmg_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 69.333374}
+        - {x: -100, y: 2.333374}
+        - {x: -100, y: -48.666626}
+        - {x: 85, y: -48.666626}
+        - {x: 85, y: 53.333374}
+        - {x: 36, y: 69.333374}
+    - name: Dmg_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.6666565, y: 69.333374}
+        - {x: -87.66666, y: -2.666626}
+        - {x: -87.66666, y: -31.666626}
+        - {x: -27.666656, y: -48.666626}
+        - {x: 67.33334, y: -48.666626}
+        - {x: 79.33334, y: -43.666626}
+        - {x: 79.33334, y: 69.333374}
+    - name: Dmg_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.333313, y: 69.333374}
+        - {x: -18.333313, y: 60.333374}
+        - {x: -67.33331, y: -12.666626}
+        - {x: -67.33331, y: -23.666626}
+        - {x: -65.33331, y: -25.666626}
+        - {x: -53.333313, y: -26.666626}
+        - {x: -42.333313, y: -26.666626}
+        - {x: -0.333313, y: -47.666626}
+        - {x: 18.666687, y: -47.666626}
+        - {x: 73.66669, y: -40.666626}
+        - {x: 73.66669, y: 59.333374}
+        - {x: 58.666687, y: 69.333374}
+    - name: Dmg_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 69.333374}
+        - {x: -47, y: 32.333374}
+        - {x: -47, y: -30.666626}
+        - {x: -34, y: -46.666626}
+        - {x: 53, y: -46.666626}
+        - {x: 65, y: -25.666626}
+        - {x: 65, y: 67.333374}
+        - {x: 54, y: 69.333374}
+    - name: Dmg_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.666626, y: 69.333374}
+        - {x: -54.666626, y: 51.333374}
+        - {x: -54.666626, y: -7.666626}
+        - {x: -36.666626, y: -46.666626}
+        - {x: 48.333374, y: -46.666626}
+        - {x: 55.333374, y: -30.666626}
+        - {x: 55.333374, y: 52.333374}
+        - {x: 27.333374, y: 69.333374}
+    - name: Dmg_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 68}
+        - {x: -66, y: 35}
+        - {x: -66, y: -29}
+        - {x: -52, y: -49}
+        - {x: 42, y: -49}
+        - {x: 48, y: -35}
+        - {x: 48, y: 60}
+        - {x: 40, y: 68}
+    - name: Dmg_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.66666, y: 68}
+        - {x: -75.66666, y: 57}
+        - {x: -75.66666, y: -16}
+        - {x: -51.666656, y: -49}
+        - {x: 7.3333435, y: -49}
+        - {x: 45.333344, y: -39}
+        - {x: 45.333344, y: 46}
+        - {x: 21.333344, y: 68}
+    - name: Dmg_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.666687, y: 68}
+        - {x: -78.33331, y: 68}
+        - {x: -83.33331, y: 59}
+        - {x: -83.33331, y: -5}
+        - {x: -79.33331, y: -7}
+        - {x: -62.333313, y: -16}
+        - {x: -44.333313, y: -44}
+        - {x: -38.333313, y: -48}
+        - {x: -25.333313, y: -50}
+        - {x: -15.333313, y: -50}
+        - {x: 67.66669, y: -25}
+        - {x: 68.66669, y: -24}
+        - {x: 68.66669, y: 0}
+    - name: Dmg_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73, y: 67}
+        - {x: -67, y: 53}
+        - {x: -62, y: 49}
+        - {x: -61, y: 49}
+        - {x: -90, y: 5}
+        - {x: -90, y: -4}
+        - {x: -89, y: -8}
+        - {x: -67, y: -52}
+        - {x: 13, y: -52}
+        - {x: 86, y: -37}
+        - {x: 86, y: 30}
+        - {x: 1, y: 67}
+    - name: Dmg_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.666626, y: 1}
+        - {x: -93.666626, y: -6}
+        - {x: -91.666626, y: -13}
+        - {x: -71.666626, y: -53}
+        - {x: -7.666626, y: -53}
+        - {x: 99.333374, y: -23}
+        - {x: 99.333374, y: -6}
+        - {x: 5.333374, y: 56}
+        - {x: -31.666626, y: 67}
+        - {x: -66.666626, y: 67}
+        - {x: -79.666626, y: 51}
+    - name: Dmg_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97, y: -17.333313}
+        - {x: -86, y: -56.333313}
+        - {x: 14, y: -56.333313}
+        - {x: 106, y: -18.333313}
+        - {x: 106, y: -2.333313}
+        - {x: 2, y: 67.66669}
+        - {x: -68, y: 67.66669}
+        - {x: -88, y: 60.666687}
+        - {x: -97, y: 48.666687}
+    - name: Dmg_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82.66666, y: 66.66669}
+        - {x: -93.66666, y: 52.666687}
+        - {x: -93.66666, y: -60.333313}
+        - {x: -22.666656, y: -60.333313}
+        - {x: 106.33334, y: -4.333313}
+        - {x: 106.33334, y: 17.666687}
+        - {x: -27.666656, y: 66.66669}
+    - name: Dmg_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.333313, y: 66.66669}
+        - {x: -67.33331, y: 66.66669}
+        - {x: -83.33331, y: 54.666687}
+        - {x: -81.33331, y: 44.666687}
+        - {x: -70.33331, y: 46.666687}
+        - {x: -66.33331, y: 49.666687}
+        - {x: -69.33331, y: 47.666687}
+        - {x: -72.33331, y: 39.666687}
+        - {x: -86.33331, y: -8.333313}
+        - {x: -86.33331, y: -22.333313}
+        - {x: -57.333313, y: -27.333313}
+        - {x: -81.33331, y: -47.333313}
+        - {x: -79.33331, y: -64.33331}
+        - {x: 13.666687, y: -64.33331}
+        - {x: 102.66669, y: -2.333313}
+        - {x: 102.66669, y: 17.666687}
+        - {x: -22.333313, y: 65.66669}
+    - name: Dmg_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -81, y: 65.66669}
+        - {x: -81, y: -69.33331}
+        - {x: -8, y: -69.33331}
+        - {x: 95, y: -14.333313}
+        - {x: 95, y: 18.666687}
+        - {x: 27, y: 65.66669}
+    - name: Dmg_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.666626, y: 65.66669}
+        - {x: -86.666626, y: 57.666687}
+        - {x: -86.666626, y: -73.33331}
+        - {x: 41.333374, y: -73.33331}
+        - {x: 85.333374, y: -24.333313}
+        - {x: 85.333374, y: 24.666687}
+        - {x: 29.333374, y: 65.66669}
+    - name: Dmg_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 64.33334}
+        - {x: -91, y: 50.333344}
+        - {x: -91, y: -53.666656}
+        - {x: -71, y: -76.66666}
+        - {x: -12, y: -76.66666}
+        - {x: -1, y: -67.66666}
+        - {x: 71, y: 11.3333435}
+        - {x: 71, y: 21.333344}
+        - {x: 12, y: 64.33334}
+    - name: Dmg_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -89.66666, y: 64.33334}
+        - {x: -89.66666, y: 31.333344}
+        - {x: -88.66666, y: 28.333344}
+        - {x: -89.66666, y: -2.6666565}
+        - {x: -89.66666, y: -37.666656}
+        - {x: -84.66666, y: -62.666656}
+        - {x: -56.666656, y: -79.66666}
+        - {x: 3.3333435, y: -79.66666}
+        - {x: 57.333344, y: -6.6666565}
+        - {x: 57.333344, y: 28.333344}
+        - {x: 35.333344, y: 64.33334}
+    - name: Dmg_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -86.33331, y: 64.33334}
+        - {x: -86.33331, y: -70.66666}
+        - {x: -59.333313, y: -82.66666}
+        - {x: 6.666687, y: -82.66666}
+        - {x: 46.666687, y: -47.666656}
+        - {x: 46.666687, y: 47.333344}
+        - {x: 24.666687, y: 64.33334}
+    - name: Dmg_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 63.333344}
+        - {x: -7, y: 63.333344}
+        - {x: -10, y: 57.333344}
+        - {x: -48, y: 50.333344}
+        - {x: -78, y: 43.333344}
+        - {x: -81, y: 39.333344}
+        - {x: -81, y: 31.333344}
+        - {x: -77, y: 23.333344}
+        - {x: -81, y: -20.666656}
+        - {x: -81, y: -40.666656}
+        - {x: -74, y: -52.666656}
+        - {x: -46, y: -45.666656}
+        - {x: -34, y: -40.666656}
+        - {x: -24, y: -35.666656}
+        - {x: -19, y: -82.66666}
+        - {x: -14, y: -83.66666}
+        - {x: 12, y: -83.66666}
+        - {x: 55, y: -30.666656}
+        - {x: 55, y: 12.3333435}
+        - {x: 29, y: 55.333344}
+    - name: Dmg_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.666626, y: 64.33334}
+        - {x: -71.666626, y: 63.333344}
+        - {x: -71.666626, y: -83.66666}
+        - {x: 33.333374, y: -83.66666}
+        - {x: 71.333374, y: -46.666656}
+        - {x: 71.333374, y: 3.3333435}
+        - {x: 39.333374, y: 64.33334}
+    - name: Dmg_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: -82}
+        - {x: 61, y: -82}
+        - {x: 81, y: -65}
+        - {x: 81, y: 45}
+        - {x: 68, y: 64}
+        - {x: -62, y: 64}
+        - {x: -62, y: -55}
+    - name: Dmg_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47.666656, y: 64}
+        - {x: -52.666656, y: 57}
+        - {x: -52.666656, y: -55}
+        - {x: -41.666656, y: -70}
+        - {x: -24.666656, y: -61}
+        - {x: 22.333344, y: -80}
+        - {x: 52.333344, y: -80}
+        - {x: 87.33334, y: -28}
+        - {x: 87.33334, y: 39}
+        - {x: 66.33334, y: 64}
+    - name: Dmg_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.333313, y: 65}
+        - {x: -44.333313, y: 47}
+        - {x: -44.333313, y: -34}
+        - {x: -25.333313, y: -76}
+        - {x: 68.66669, y: -76}
+        - {x: 75.66669, y: -75}
+        - {x: 93.66669, y: -45}
+        - {x: 93.66669, y: 45}
+        - {x: 60.666687, y: 65}
+    - name: Dmg_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 65}
+        - {x: -61, y: 23}
+        - {x: -61, y: 0}
+        - {x: -23, y: -69}
+        - {x: 23, y: -72}
+        - {x: 94, y: -72}
+        - {x: 94, y: 65}
+    - name: Dmg_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.333374, y: 66}
+        - {x: 22.333374, y: 64}
+        - {x: -73.666626, y: 20}
+        - {x: -73.666626, y: -38}
+        - {x: -20.666626, y: -68}
+        - {x: 85.333374, y: -68}
+        - {x: 91.333374, y: -40}
+        - {x: 91.333374, y: 38}
+        - {x: 74.333374, y: 66}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

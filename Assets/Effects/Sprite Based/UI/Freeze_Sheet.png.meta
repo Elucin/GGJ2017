@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: 47e9fde9a02276e49b6d882c663125d5
+timeCreated: 1485105214
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Freeze_Sheet_0
+    21300002: Freeze_Sheet_1
+    21300004: Freeze_Sheet_2
+    21300006: Freeze_Sheet_3
+    21300008: Freeze_Sheet_4
+    21300010: Freeze_Sheet_5
+    21300012: Freeze_Sheet_6
+    21300014: Freeze_Sheet_7
+    21300016: Freeze_Sheet_8
+    21300018: Freeze_Sheet_9
+    21300020: Freeze_Sheet_10
+    21300022: Freeze_Sheet_11
+    21300024: Freeze_Sheet_12
+    21300026: Freeze_Sheet_13
+    21300028: Freeze_Sheet_14
+    21300030: Freeze_Sheet_15
+    21300032: Freeze_Sheet_16
+    21300034: Freeze_Sheet_17
+    21300036: Freeze_Sheet_18
+    21300038: Freeze_Sheet_19
+    21300040: Freeze_Sheet_20
+    21300042: Freeze_Sheet_21
+    21300044: Freeze_Sheet_22
+    21300046: Freeze_Sheet_23
+    21300048: Freeze_Sheet_24
+    21300050: Freeze_Sheet_25
+    21300052: Freeze_Sheet_26
+    21300054: Freeze_Sheet_27
+    21300056: Freeze_Sheet_28
+    21300058: Freeze_Sheet_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Freeze_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 125.666626}
+        - {x: -107, y: 43.666626}
+        - {x: -107, y: -5.333374}
+        - {x: -29, y: -112.333374}
+        - {x: 29, y: -112.333374}
+        - {x: 120, y: -19.333374}
+        - {x: 122, y: -15.333374}
+        - {x: 122, y: 4.666626}
+        - {x: 2, y: 125.666626}
+    - name: Freeze_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.333344, y: 125.666626}
+        - {x: -22.666656, y: 125.666626}
+        - {x: -118.66666, y: 52.666626}
+        - {x: -118.66666, y: -9.333374}
+        - {x: -12.6666565, y: -112.333374}
+        - {x: 13.3333435, y: -112.333374}
+        - {x: 121.33334, y: -13.333374}
+        - {x: 121.33334, y: 8.666626}
+        - {x: 30.333344, y: 67.666626}
+    - name: Freeze_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.333313, y: 125.666626}
+        - {x: -78.33331, y: 42.666626}
+        - {x: -126.33331, y: 6.666626}
+        - {x: -126.33331, y: -29.333374}
+        - {x: -9.333313, y: -112.333374}
+        - {x: 2.666687, y: -112.333374}
+        - {x: 76.66669, y: -47.333374}
+        - {x: 116.66669, y: -5.333374}
+        - {x: 116.66669, y: 30.666626}
+        - {x: 4.666687, y: 125.666626}
+    - name: Freeze_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 124.666626}
+        - {x: 0, y: 125.666626}
+        - {x: -17, y: 125.666626}
+        - {x: -131, y: 5.666626}
+        - {x: -131, y: -38.333374}
+        - {x: -19, y: -112.333374}
+        - {x: 11, y: -112.333374}
+        - {x: 28, y: -64.333374}
+        - {x: 106, y: -13.333374}
+        - {x: 106, y: 20.666626}
+    - name: Freeze_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.666626, y: 125.666626}
+        - {x: -129.66663, y: -5.333374}
+        - {x: -129.66663, y: -56.333374}
+        - {x: -23.666626, y: -112.333374}
+        - {x: 30.333374, y: -112.333374}
+        - {x: 94.333374, y: -45.333374}
+        - {x: 94.333374, y: 29.666626}
+        - {x: 5.333374, y: 125.666626}
+    - name: Freeze_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 125.333374}
+        - {x: -14, y: 125.333374}
+        - {x: -123, y: -11.666626}
+        - {x: -123, y: -50.666626}
+        - {x: -24, y: -112.666626}
+        - {x: 32, y: -112.666626}
+        - {x: 97, y: -63.666626}
+        - {x: 97, y: 25.333374}
+        - {x: 93, y: 45.333374}
+    - name: Freeze_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.6666565, y: 125.333374}
+        - {x: -14.6666565, y: 124.333374}
+        - {x: -89.66666, y: 28.333374}
+        - {x: -108.66666, y: 2.333374}
+        - {x: -108.66666, y: -41.666626}
+        - {x: -18.666656, y: -112.666626}
+        - {x: 12.3333435, y: -112.666626}
+        - {x: 113.33334, y: -34.666626}
+        - {x: 113.33334, y: 20.333374}
+        - {x: 3.3333435, y: 125.333374}
+    - name: Freeze_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99.33331, y: -53.666626}
+        - {x: -26.333313, y: -112.666626}
+        - {x: 10.666687, y: -112.666626}
+        - {x: 121.66669, y: -29.666626}
+        - {x: 121.66669, y: 2.333374}
+        - {x: 10.666687, y: 125.333374}
+        - {x: -17.333313, y: 125.333374}
+        - {x: -99.33331, y: 25.333374}
+    - name: Freeze_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 125.333374}
+        - {x: -114, y: 9.333374}
+        - {x: -114, y: 1.333374}
+        - {x: -111, y: -3.666626}
+        - {x: -9, y: -112.666626}
+        - {x: 6, y: -112.666626}
+        - {x: 122, y: -55.666626}
+        - {x: 122, y: 11.333374}
+        - {x: 39, y: 125.333374}
+    - name: Freeze_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114.333374, y: 7.333374}
+        - {x: 7.333374, y: 125.333374}
+        - {x: -17.666626, y: 125.333374}
+        - {x: -123.666626, y: 15.333374}
+        - {x: -123.666626, y: -11.666626}
+        - {x: -11.666626, y: -112.666626}
+        - {x: 12.333374, y: -112.666626}
+        - {x: 117.333374, y: -12.666626}
+        - {x: 119.333374, y: -5.666626}
+        - {x: 119.333374, y: 5.333374}
+    - name: Freeze_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 124}
+        - {x: -93, y: 46}
+        - {x: -130, y: 6}
+        - {x: -130, y: -38}
+        - {x: -25, y: -113}
+        - {x: 10, y: -113}
+        - {x: 111, y: -9}
+        - {x: 111, y: 27}
+        - {x: 2, y: 124}
+    - name: Freeze_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.6666565, y: 124}
+        - {x: -86.66666, y: 41}
+        - {x: -130.66666, y: -1}
+        - {x: -130.66666, y: -42}
+        - {x: -21.666656, y: -113}
+        - {x: 25.333344, y: -113}
+        - {x: 101.33334, y: -4}
+        - {x: 101.33334, y: 22}
+        - {x: 1.3333435, y: 124}
+    - name: Freeze_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.333313, y: 124}
+        - {x: -126.33331, y: 14}
+        - {x: -126.33331, y: -30}
+        - {x: -124.33331, y: -32}
+        - {x: -9.333313, y: -111}
+        - {x: -5.333313, y: -113}
+        - {x: 7.666687, y: -113}
+        - {x: 88.66669, y: -41}
+        - {x: 88.66669, y: 27}
+        - {x: 38.666687, y: 124}
+    - name: Freeze_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 124}
+        - {x: -12, y: 124}
+        - {x: -118, y: 1}
+        - {x: -118, y: -36}
+        - {x: -17, y: -113}
+        - {x: 28, y: -113}
+        - {x: 106, y: -41}
+        - {x: 106, y: 3}
+        - {x: 2, y: 123}
+    - name: Freeze_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104.333374, y: -6}
+        - {x: 1.333374, y: 122}
+        - {x: -0.666626, y: 124}
+        - {x: -9.666626, y: 124}
+        - {x: -11.666626, y: 123}
+        - {x: -89.666626, y: 17}
+        - {x: -93.666626, y: 11}
+        - {x: -92.666626, y: 9}
+        - {x: -87.666626, y: 3}
+        - {x: -98.666626, y: -16}
+        - {x: -98.666626, y: -45}
+        - {x: -13.666626, y: -113}
+        - {x: 3.333374, y: -113}
+        - {x: 4.333374, y: -110}
+        - {x: 117.333374, y: -33}
+        - {x: 117.333374, y: -12}
+    - name: Freeze_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 125.66669}
+        - {x: -107, y: 43.666687}
+        - {x: -107, y: -5.333313}
+        - {x: -29, y: -112.33331}
+        - {x: 29, y: -112.33331}
+        - {x: 120, y: -19.333313}
+        - {x: 122, y: -15.333313}
+        - {x: 122, y: 4.666687}
+        - {x: 2, y: 125.66669}
+    - name: Freeze_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.333344, y: 125.66669}
+        - {x: -22.666656, y: 125.66669}
+        - {x: -118.66666, y: 52.666687}
+        - {x: -118.66666, y: -9.333313}
+        - {x: -12.6666565, y: -112.33331}
+        - {x: 13.3333435, y: -112.33331}
+        - {x: 121.33334, y: -13.333313}
+        - {x: 121.33334, y: 8.666687}
+        - {x: 30.333344, y: 67.66669}
+    - name: Freeze_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.333313, y: 125.66669}
+        - {x: -78.33331, y: 42.666687}
+        - {x: -126.33331, y: 6.666687}
+        - {x: -126.33331, y: -29.333313}
+        - {x: -9.333313, y: -112.33331}
+        - {x: 2.666687, y: -112.33331}
+        - {x: 76.66669, y: -47.333313}
+        - {x: 116.66669, y: -5.333313}
+        - {x: 116.66669, y: 30.666687}
+        - {x: 4.666687, y: 125.66669}
+    - name: Freeze_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 124.66669}
+        - {x: 0, y: 125.66669}
+        - {x: -17, y: 125.66669}
+        - {x: -131, y: 5.666687}
+        - {x: -131, y: -38.333313}
+        - {x: -19, y: -112.33331}
+        - {x: 11, y: -112.33331}
+        - {x: 28, y: -64.33331}
+        - {x: 106, y: -13.333313}
+        - {x: 106, y: 20.666687}
+    - name: Freeze_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50.666626, y: 125.66669}
+        - {x: -129.66663, y: -5.333313}
+        - {x: -129.66663, y: -56.333313}
+        - {x: -23.666626, y: -112.33331}
+        - {x: 30.333374, y: -112.33331}
+        - {x: 94.333374, y: -45.333313}
+        - {x: 94.333374, y: 29.666687}
+        - {x: 5.333374, y: 125.66669}
+    - name: Freeze_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 125.33334}
+        - {x: -14, y: 125.33334}
+        - {x: -123, y: -11.6666565}
+        - {x: -123, y: -50.666656}
+        - {x: -24, y: -112.66666}
+        - {x: 32, y: -112.66666}
+        - {x: 97, y: -63.666656}
+        - {x: 97, y: 25.333344}
+        - {x: 93, y: 45.333344}
+    - name: Freeze_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.6666565, y: 125.33334}
+        - {x: -14.6666565, y: 124.33334}
+        - {x: -89.66666, y: 28.333344}
+        - {x: -108.66666, y: 2.3333435}
+        - {x: -108.66666, y: -41.666656}
+        - {x: -18.666656, y: -112.66666}
+        - {x: 12.3333435, y: -112.66666}
+        - {x: 113.33334, y: -34.666656}
+        - {x: 113.33334, y: 20.333344}
+        - {x: 3.3333435, y: 125.33334}
+    - name: Freeze_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99.33331, y: -53.666656}
+        - {x: -26.333313, y: -112.66666}
+        - {x: 10.666687, y: -112.66666}
+        - {x: 121.66669, y: -29.666656}
+        - {x: 121.66669, y: 2.3333435}
+        - {x: 10.666687, y: 125.33334}
+        - {x: -17.333313, y: 125.33334}
+        - {x: -99.33331, y: 25.333344}
+    - name: Freeze_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 125.33334}
+        - {x: -114, y: 9.3333435}
+        - {x: -114, y: 1.3333435}
+        - {x: -111, y: -3.6666565}
+        - {x: -9, y: -112.66666}
+        - {x: 6, y: -112.66666}
+        - {x: 122, y: -55.666656}
+        - {x: 122, y: 11.3333435}
+        - {x: 39, y: 125.33334}
+    - name: Freeze_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114.333374, y: 7.3333435}
+        - {x: 7.333374, y: 125.33334}
+        - {x: -17.666626, y: 125.33334}
+        - {x: -123.666626, y: 15.3333435}
+        - {x: -123.666626, y: -11.6666565}
+        - {x: -11.666626, y: -112.66666}
+        - {x: 12.333374, y: -112.66666}
+        - {x: 117.333374, y: -12.6666565}
+        - {x: 119.333374, y: -5.6666565}
+        - {x: 119.333374, y: 5.3333435}
+    - name: Freeze_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 124}
+        - {x: -93, y: 46}
+        - {x: -130, y: 6}
+        - {x: -130, y: -38}
+        - {x: -25, y: -113}
+        - {x: 10, y: -113}
+        - {x: 111, y: -9}
+        - {x: 111, y: 27}
+        - {x: 2, y: 124}
+    - name: Freeze_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.6666565, y: 124}
+        - {x: -86.66666, y: 41}
+        - {x: -130.66666, y: -1}
+        - {x: -130.66666, y: -42}
+        - {x: -21.666656, y: -113}
+        - {x: 25.333344, y: -113}
+        - {x: 101.33334, y: -4}
+        - {x: 101.33334, y: 22}
+        - {x: 1.3333435, y: 124}
+    - name: Freeze_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.333313, y: 124}
+        - {x: -126.33331, y: 14}
+        - {x: -126.33331, y: -30}
+        - {x: -124.33331, y: -32}
+        - {x: -9.333313, y: -111}
+        - {x: -5.333313, y: -113}
+        - {x: 7.666687, y: -113}
+        - {x: 88.66669, y: -41}
+        - {x: 88.66669, y: 27}
+        - {x: 38.666687, y: 124}
+    - name: Freeze_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 124}
+        - {x: -12, y: 124}
+        - {x: -118, y: 1}
+        - {x: -118, y: -36}
+        - {x: -17, y: -113}
+        - {x: 28, y: -113}
+        - {x: 106, y: -41}
+        - {x: 106, y: 3}
+        - {x: 2, y: 123}
+    - name: Freeze_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104.333374, y: -6}
+        - {x: 1.333374, y: 122}
+        - {x: -0.666626, y: 124}
+        - {x: -9.666626, y: 124}
+        - {x: -11.666626, y: 123}
+        - {x: -89.666626, y: 17}
+        - {x: -93.666626, y: 11}
+        - {x: -92.666626, y: 9}
+        - {x: -87.666626, y: 3}
+        - {x: -98.666626, y: -16}
+        - {x: -98.666626, y: -45}
+        - {x: -13.666626, y: -113}
+        - {x: 3.333374, y: -113}
+        - {x: 4.333374, y: -110}
+        - {x: 117.333374, y: -33}
+        - {x: 117.333374, y: -12}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
