@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 	    if(Input.GetButtonDown("Submit"))
         {
             PlayerControl.LiveTime = 0f;
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
 	}
 }

@@ -12,7 +12,7 @@ public class NextLevel : MonoBehaviour {
 	void Update () {
 	    if(Input.GetButtonDown("Submit"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
 	}
 }
