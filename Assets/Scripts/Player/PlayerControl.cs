@@ -18,7 +18,7 @@ public class PlayerControl : MonoBehaviour {
     bool canShootFaster = false;
     bool HammerDown = false;
     bool HammerPressed = false;
-
+    Camera_Shake camShake;
     public static bool isInTimeOut = false;
 
     //Components
@@ -60,11 +60,16 @@ public class PlayerControl : MonoBehaviour {
     void Start () {
         Physics.IgnoreLayerCollision(8, 9);
         Physics.IgnoreLayerCollision(0, 9);
+        Physics.IgnoreLayerCollision(8, 12);
+        Physics.IgnoreLayerCollision(0, 12);
+        Physics.IgnoreLayerCollision(9, 12);
+        Physics.IgnoreLayerCollision(10, 12);
         rBody = GetComponent<Rigidbody>();
         mainCam = Camera.main;
         line = GetComponent<LineRenderer>();
         meshRend = GetComponent<MeshRenderer>();
         cap = GetComponent<CapsuleCollider>();
+        camShake = GameObject.FindObjectOfType<Camera_Shake>();
 	}
 	
 	// Update is called once per frame
@@ -91,6 +96,8 @@ public class PlayerControl : MonoBehaviour {
 
             if (!RailgunHeld && RailgunPressed)
             {
+                //camShake.PlayShake(0.5f, 2f);
+                
                 Instantiate(railgun, transform.position + transform.forward + transform.up / 2, transform.rotation);
                 RailgunPressed = false;
                 Railgun(transform.position + transform.up / 2, transform.forward);
@@ -123,6 +130,7 @@ public class PlayerControl : MonoBehaviour {
 
             if(!HammerDown && HammerPressed)
             {
+               
                 Instantiate(hammer, transform.position + transform.forward / 2, transform.rotation);
                 HammerPressed = false;
             }
