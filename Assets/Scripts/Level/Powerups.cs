@@ -5,23 +5,17 @@ public class Powerups : MonoBehaviour {
 
     public static bool SlowedDown = false;
     private static float slowTimer;
-    const float SLOW_TIME = 3f;
-    public static float SLOW_COEFFICIENT = 0.25f;
+    const float SLOW_TIME = 5f;
+    public static float SLOW_COEFFICIENT = 0.15f;
 
     public static bool SpedUp = false;
     private static float speedTimer;
-    const float SPEED_TIME = 5f;
+    const float SPEED_TIME = 7f;
     public static float SPEED_COEFFICIENT = 0.75f;
 
     public static bool PoweredUp = false;
     private static float powerTimer;
-    const float POWER_TIME = 7f;
-
-    // Use this for initialization
-    void Start () {
-	   
-
-	}
+    const float POWER_TIME = 10f;
 
 	// Update is called once per frame
 	void Update () {

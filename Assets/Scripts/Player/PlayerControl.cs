@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
     const int BEAT_COUNT_FRAMES = 12;
-    const float TIME_OUT = 3f; //Scale based on how many deaths?
+    const float TIME_OUT = 2.5f; //Scale based on how many deaths?
+
+    int deathCount = 0;
 
     float xAxis;
     float yAxis;
@@ -72,8 +74,8 @@ public class PlayerControl : MonoBehaviour {
         yAxis = Input.GetAxis("Vertical");
         xLook = Input.GetAxis("RotateX");
         yLook = Input.GetAxis("RotateY");
-        RailgunHeld = Input.GetAxis("RailGun") > 0.2f;
-        HammerDown = Input.GetAxis("Hammer") > 0.2f;
+        RailgunHeld = Input.GetAxis("RailGun") > 0.2f || Input.GetButton("RailGun");
+        HammerDown = Input.GetAxis("Hammer") > 0.2f || Input.GetButton("Hammer") ;
         aimLock = Input.GetButton("AimLock");
 
         Movement();
@@ -195,7 +197,7 @@ public class PlayerControl : MonoBehaviour {
         rBody.useGravity = false;
         meshRend.material = ghost;
         isInTimeOut = true;
-        yield return new WaitForSeconds(TIME_OUT);
+        yield return new WaitForSeconds(TIME_OUT + (0.2f * deathCount));
         isInTimeOut = false;
         meshRend.material = defaultMat;
         rBody.useGravity = true;
