@@ -44,7 +44,7 @@ public class Terminus : MonoBehaviour {
             if (audioS.isPlaying)
                 audioS.Stop();
             audioS.Play();
-            Instantiate(particles, g.transform.position, Quaternion.identity);
+            Instantiate(particles, g.transform.position, Quaternion.Euler(new Vector3(90, 0, 0)));
             Health -= g.GetComponent<AIBase>().SoundDamage;
             Destroy(g);
         }

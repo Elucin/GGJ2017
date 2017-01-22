@@ -104,15 +104,18 @@ public class AIBase : MonoBehaviour
 
     protected virtual void Death()
     {
-        Instantiate(deathParticles, transform.position, Quaternion.identity);
+        Instantiate(deathParticles, transform.position, Quaternion.Euler(Vector3.right * 90f));
         Instantiate(deathrattle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
     void Pop()
     {
-        transform.position = new Vector3(transform.position.x, originalY, transform.position.z);
-        transform.position += Vector3.up * 0.8f;
+        if (!name.Contains("Amp"))
+        {
+            transform.position = new Vector3(transform.position.x, originalY, transform.position.z);
+            transform.position += Vector3.up * 0.8f;
+        }
     }
 
     void OnCollisionEnter(Collision c)

@@ -11,8 +11,11 @@ public class UI : MonoBehaviour {
     public AudioSource music;
     private float millisecondsCount;
     private int minuteCount = 0;
-	// Use this for initialization
-	void Start () {
+    public static string minutes;
+    public static string seconds;
+    public static string milliseconds;
+    // Use this for initialization
+    void Start () {
         HealthBar = GameObject.Find("TerminusHealthBar").GetComponent<Image>();
         terminus = GameObject.Find("Terminus").GetComponent<Terminus>();
 	}
@@ -20,9 +23,7 @@ public class UI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         HealthBar.fillAmount = terminus.Health / 100f;
-        string minutes;
-        string seconds;
-        string milliseconds;
+        
         if (minuteCount <= 9)
         {
             minutes = "0" + minuteCount.ToString();

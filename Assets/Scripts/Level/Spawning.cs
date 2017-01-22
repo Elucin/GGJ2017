@@ -58,7 +58,7 @@ public class Spawning : MonoBehaviour {
 
     private float difficulty = 0;
     private float diffCoef = 0;
-    const float MAX_DIFF = 2.5f;
+    const float MAX_DIFF = 2.7f;
     // Use this for initialization
     void Start () {
         hiTimer = midTimer = bassTimer = ampTimer = Time.time;

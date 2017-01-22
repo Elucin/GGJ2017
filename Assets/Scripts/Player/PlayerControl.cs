@@ -35,6 +35,7 @@ public class PlayerControl : MonoBehaviour {
     public Light Powered;
     public Light Sped;
     public Light Slow;
+    AudioSource audioS;
 
     //External References
     Camera mainCam;
@@ -49,6 +50,8 @@ public class PlayerControl : MonoBehaviour {
 
     //Properties
     const float SPEED = 12f;
+    public AudioClip timeOut;
+    public AudioClip timeIn;
 
     int beatCounter = 0;
 
@@ -83,7 +86,9 @@ public class PlayerControl : MonoBehaviour {
         cap = GetComponent<CapsuleCollider>();
         camShake = GameObject.FindObjectOfType<Camera_Shake>();
         anim = GetComponentInChildren<Animator>();
-	}
+        audioS = GetComponent<AudioSource>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -109,7 +114,7 @@ public class PlayerControl : MonoBehaviour {
                 line.SetPosition(1, Vector3.forward * 120f);
             }
             else
-                line.SetPosition(1, Vector3.forward * 2f);
+                line.SetPosition(1, Vector3.zero);
 
             if (!RailgunHeld && RailgunPressed)
             {
@@ -129,7 +134,7 @@ public class PlayerControl : MonoBehaviour {
                 {
                     GameObject target = null;
                     float angle = 25f;
-                    RaycastHit[] enemies = Physics.SphereCastAll(transform.position, 3f, transform.forward, 100f, enemiesOnly, QueryTriggerInteraction.Ignore);
+                    RaycastHit[] enemies = Physics.SphereCastAll(transform.position, 2.5f, transform.forward, 100f, enemiesOnly, QueryTriggerInteraction.Ignore);
 
                     foreach(RaycastHit r in enemies)
                     {
@@ -154,12 +159,12 @@ public class PlayerControl : MonoBehaviour {
             if (HammerDown && cooldown)
             {
                 HammerPressed = true;
-                line.SetPosition(1, Vector3.forward * 8);
+                line.SetPosition(1, Vector3.forward * 18);
             }
             else
             {
                 if(!RailgunHeld)
-                    line.SetPosition(1, Vector3.forward * 2f);
+                    line.SetPosition(1, Vector3.zero);
             }
 
             if(!HammerDown && HammerPressed)
@@ -216,23 +221,7 @@ public class PlayerControl : MonoBehaviour {
             }
 
             rBody.MoveRotation(newRotation);
-            //angleH = transform.eulerAngles.y;
         }
-        //else if (RailgunHeld)
-        //{
-            
-            /*
-            angleH  += xLook * 200 * Time.deltaTime;
-
-            if (angleH > 180f)
-                angleH -= 360f;
-            else if (angleH < -180f)
-                angleH += 360f;
-
-            Quaternion aimRotation = Quaternion.Euler(0, angleH, 0);
-            transform.rotation = Quaternion.Lerp(transform.rotation, aimRotation, Time.deltaTime * 30); */
-
-        //}
         else if(aimLock)
             transform.localEulerAngles += transform.up * -xAxis;
     }
@@ -246,7 +235,7 @@ public class PlayerControl : MonoBehaviour {
 
     void Railgun(Vector3 pos, Vector3 dir)
     {
-        RaycastHit[] hit = Physics.RaycastAll(pos, dir, 120f,enemiesOnly ,QueryTriggerInteraction.Ignore);
+        RaycastHit[] hit = Physics.SphereCastAll(pos, 0.7f ,dir, 120f,enemiesOnly ,QueryTriggerInteraction.Ignore);
         foreach(RaycastHit h in hit)
         {
             if (h.transform.CompareTag("Enemy"))
@@ -261,12 +250,16 @@ public class PlayerControl : MonoBehaviour {
 
     IEnumerator TimeOut()
     {
+        audioS.clip = timeOut;
+        audioS.Play();
         gameObject.layer = 9;
         rBody.useGravity = false;
         foreach(MeshRenderer r in meshRend)
             r.material = ghost;
         isInTimeOut = true;
         yield return new WaitForSeconds(TIME_OUT + (0.3f * deathCount));
+        audioS.clip = timeIn;
+        audioS.Play();
         isInTimeOut = false;
         foreach (MeshRenderer r in meshRend)
             r.material = defaultMat;
