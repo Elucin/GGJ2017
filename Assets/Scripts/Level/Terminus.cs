@@ -17,6 +17,9 @@ public class Terminus : MonoBehaviour {
             animDude.SetInteger("Mood", 3);
         else
             animDude.SetInteger("Mood", 4);
+
+        if (Health <= 0f)
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 	void OnTriggerEnter(Collider c)
     {

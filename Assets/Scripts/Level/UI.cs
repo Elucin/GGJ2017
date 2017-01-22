@@ -8,7 +8,7 @@ public class UI : MonoBehaviour {
     public Terminus terminus;
     public Text timer;
     private float millisecondsCount;
-    private int minuteCount;
+    private int minuteCount = 0;
 	// Use this for initialization
 	void Start () {
         HealthBar = GameObject.Find("TerminusHealthBar").GetComponent<Image>();
@@ -48,6 +48,7 @@ public class UI : MonoBehaviour {
         //float milliseconds = Mathf.Round((PlayerControl.LiveTime - (Mathf.Round(PlayerControl.LiveTime * 100f)/100f) * 100f)) / 100f;
 
         timer.text = minutes + ":" + seconds + ":" + milliseconds;
+        minuteCount = (int)(PlayerControl.LiveTime / 60f);
 
 	}
 }

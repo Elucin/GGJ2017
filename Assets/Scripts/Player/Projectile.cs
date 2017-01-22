@@ -6,10 +6,11 @@ public class Projectile : MonoBehaviour {
     public AudioClip[] clips;
     AudioSource source;
     const int VELOCITY = 150;
-    const int DAMAGE = 25;
+    const int DAMAGE = 35;
     const float LIFETIME = 1f;
 
     float timer;
+    public GameObject target = null;
 
 	// Use this for initialization
 	void Start () {
@@ -28,13 +29,21 @@ public class Projectile : MonoBehaviour {
 	void Update () {
         if (Time.time - timer >= LIFETIME)
             Destroy(gameObject);
+        if (target != null)
+        {
+            GetComponent<Rigidbody>().AddForce((target.transform.position - transform.position) * 50, ForceMode.Acceleration);
+            GetComponent<Rigidbody>().velocity = GetComponent<Rigidbody>().velocity.normalized * VELOCITY;
+            if (Vector3.Angle(transform.forward, target.transform.position - transform.position) > 90f)
+                target = null;
+
+        }
 	}
 
     void OnCollisionEnter(Collision c)
     {
         if(c.transform.CompareTag("Enemy"))
         {
-            c.gameObject.GetComponent<AIBase>().TakeDamage(DAMAGE + Powerups.PoweredUp.GetHashCode() * 25f);
+            c.gameObject.GetComponent<AIBase>().TakeDamage(DAMAGE + Powerups.PoweredUp.GetHashCode() * 1000f);
         }
         Destroy(gameObject);
     }

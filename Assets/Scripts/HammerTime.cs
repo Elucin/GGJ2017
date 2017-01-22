@@ -21,7 +21,7 @@ public class HammerTime : MonoBehaviour {
     {
         if(c.transform.CompareTag("Enemy"))
         {
-            c.gameObject.GetComponent<AIBase>().TakeDamage(40f + 25f * (1 - anim.GetCurrentAnimatorStateInfo(0).normalizedTime % 1) + 25f * Powerups.PoweredUp.GetHashCode());
+            c.gameObject.GetComponent<AIBase>().TakeDamage(40f + 25f * (1 - anim.GetCurrentAnimatorStateInfo(0).normalizedTime % 1) + 1000f * Powerups.PoweredUp.GetHashCode());
         }
     }
 }

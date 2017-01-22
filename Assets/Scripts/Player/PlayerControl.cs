@@ -29,6 +29,10 @@ public class PlayerControl : MonoBehaviour {
     MeshRenderer[] meshRend;
     CapsuleCollider cap;
     Animator anim;
+    public Light Powered;
+    public Light Sped;
+    public Light Slow;
+
     //External References
     Camera mainCam;
     public Material ghost;
@@ -38,6 +42,8 @@ public class PlayerControl : MonoBehaviour {
     public GameObject projectile;
     public GameObject railgun;
     public GameObject hammer;
+    public LayerMask enemiesOnly;
+
     //Properties
     const float SPEED = 12f;
 
@@ -117,7 +123,24 @@ public class PlayerControl : MonoBehaviour {
             {
                 if ((Mathf.Abs(xLook) > 0.1f || Mathf.Abs(yLook) > 0.1f) && !RailgunHeld && !HammerDown)
                 {
+                    GameObject target = null;
+                    float angle = 25f;
+                    RaycastHit[] enemies = Physics.SphereCastAll(transform.position, 2f, transform.forward, 100f, enemiesOnly, QueryTriggerInteraction.Ignore);
+
+                    foreach(RaycastHit r in enemies)
+                    {
+                        if (Vector3.Angle(transform.forward, r.transform.position - transform.position) < angle)
+                        {
+                            angle = Vector3.Angle(transform.forward, r.transform.position - transform.position);
+                            target = r.transform.gameObject;
+                        }
+                    }
+
                     GameObject bullet = (GameObject)Instantiate(projectile, transform.position + transform.forward * 1.5f + transform.up / 2, transform.rotation) as GameObject;
+                    if(target != null)
+                    {
+                        bullet.GetComponent<Projectile>().target = target;
+                    }
 
                 }
                 canShoot = false;
@@ -145,7 +168,23 @@ public class PlayerControl : MonoBehaviour {
             beatCounter--;
             beatCounter = Mathf.Clamp(beatCounter, 0, BEAT_COUNT_FRAMES);
         }
-        if(GameObject.Find("Terminus").gameObject.GetComponent<Terminus>().Health > 0)
+
+        if (Powerups.PoweredUp)
+            Powered.enabled = true;
+        else
+            Powered.enabled = false;
+
+        if (Powerups.SlowedDown)
+            Slow.enabled = true;
+        else
+            Slow.enabled = false;
+
+        if (Powerups.SpedUp)
+            Sped.enabled = true;
+        else
+            Sped.enabled = false;
+
+        if (GameObject.Find("Terminus").gameObject.GetComponent<Terminus>().Health > 0)
         {
             LiveTime += Time.deltaTime;
         }
@@ -217,7 +256,7 @@ public class PlayerControl : MonoBehaviour {
         foreach(MeshRenderer r in meshRend)
             r.material = ghost;
         isInTimeOut = true;
-        yield return new WaitForSeconds(TIME_OUT + (0.25f * deathCount));
+        yield return new WaitForSeconds(TIME_OUT + (0.3f * deathCount));
         isInTimeOut = false;
         foreach (MeshRenderer r in meshRend)
             r.material = defaultMat;

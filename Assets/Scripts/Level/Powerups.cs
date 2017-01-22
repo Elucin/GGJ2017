@@ -15,7 +15,7 @@ public class Powerups : MonoBehaviour {
 
     public static bool PoweredUp = false;
     private static float powerTimer;
-    const float POWER_TIME = 10f;
+    const float POWER_TIME = 5f;
 
 	// Update is called once per frame
 	void Update () {
