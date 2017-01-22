@@ -7,7 +7,7 @@ public class Spawning : MonoBehaviour {
 
     const float HI_SPAWN_HEIGHT = 1.5f;
     const float MID_SPAWN_HEIGHT = 1.25f;
-    const float BASS_SPAWN_HEIGHT = 1.5f;
+    const float BASS_SPAWN_HEIGHT = 1f;
     const float AMP_SPAWN_HEIGHT = 1.5f;
 
     public GameObject Hi;

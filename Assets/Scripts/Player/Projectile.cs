@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 
+    public AudioClip[] clips;
+    AudioSource source;
     const int VELOCITY = 150;
     const int DAMAGE = 25;
     const float LIFETIME = 1f;
@@ -11,6 +13,9 @@ public class Projectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        source = GetComponent<AudioSource>();
+        source.clip = clips[Random.Range(0, clips.Length)];
+        source.Play();
         timer = Time.time;
         GetComponent<Rigidbody>().velocity = transform.forward * VELOCITY;
         if(Powerups.PoweredUp)

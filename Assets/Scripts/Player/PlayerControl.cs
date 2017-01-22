@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
     const int BEAT_COUNT_FRAMES = 12;
-    const float TIME_OUT = 2.5f; //Scale based on how many deaths?
+    const float TIME_OUT = 3.0f; //Scale based on how many deaths?
+
+    public static float LiveTime = 0;
 
     int deathCount = 0;
 
@@ -130,13 +132,17 @@ public class PlayerControl : MonoBehaviour {
 
             if(!HammerDown && HammerPressed)
             {
-               
-                Instantiate(hammer, transform.position + transform.forward / 2, transform.rotation);
+                //rBody.AddForce(-transform.forward * 2000f, ForceMode.Impulse);
+                Instantiate(hammer, transform.position + transform.forward * 2, transform.rotation);
                 HammerPressed = false;
             }
 
             beatCounter--;
             beatCounter = Mathf.Clamp(beatCounter, 0, BEAT_COUNT_FRAMES);
+        }
+        if(GameObject.Find("Terminus").gameObject.GetComponent<Terminus>().Health > 0)
+        {
+            LiveTime += Time.deltaTime;
         }
     }
 
@@ -205,7 +211,7 @@ public class PlayerControl : MonoBehaviour {
         rBody.useGravity = false;
         meshRend.material = ghost;
         isInTimeOut = true;
-        yield return new WaitForSeconds(TIME_OUT + (0.2f * deathCount));
+        yield return new WaitForSeconds(TIME_OUT + (0.25f * deathCount));
         isInTimeOut = false;
         meshRend.material = defaultMat;
         rBody.useGravity = true;

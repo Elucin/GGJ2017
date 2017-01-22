@@ -22,6 +22,6 @@ public class OrbitCam : MonoBehaviour {
         GroundPos.y = 0;
         Quaternion rotation = Quaternion.LookRotation(GroundPos);
         rotation.eulerAngles += new Vector3(30, 0, 0);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
     }
 }

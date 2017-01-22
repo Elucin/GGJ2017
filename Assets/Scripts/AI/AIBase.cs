@@ -18,7 +18,8 @@ public class AIBase : MonoBehaviour
     const float LARGE_HEALTHBOOST = 50f;
 
     public bool Amped = false;
-
+    public GameObject deathrattle;
+    public GameObject deathParticles;
 
     protected float Health;
 
@@ -103,36 +104,15 @@ public class AIBase : MonoBehaviour
 
     protected virtual void Death()
     {
-        //Instantiate Particle Effect
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+        Instantiate(deathrattle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
     void Pop()
     {
         transform.position = new Vector3(transform.position.x, originalY, transform.position.z);
-        transform.position += Vector3.up;
-        //transform.localScale = originalScale;
-        //transform.localScale *= 1.5f;
-        //StopAllCoroutines();
-        //StartCoroutine(Reset());
-    }
-
-    IEnumerator Reset()
-    {
-        while(transform.position.y < originalY)
-        {
-            float y = transform.position.y;
-            yield return null;
-        }
-        /*
-        while(transform.localScale.magnitude > originalScale.magnitude)
-        {
-            float scale = transform.localScale.x;
-            scale -= Time.deltaTime * 2f;
-            scale = Mathf.Clamp(scale, originalScale.x, transform.localScale.x);
-            transform.localScale = Vector3.one * scale;
-            yield return null;
-        }*/
+        transform.position += Vector3.up * 0.8f;
     }
 
     void OnCollisionEnter(Collision c)

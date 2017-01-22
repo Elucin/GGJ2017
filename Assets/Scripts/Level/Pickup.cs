@@ -19,6 +19,12 @@ public class Pickup : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
+    }
+
+    void Update()
+    {
+        transform.Rotate(new Vector3(0, 1, 0));
     }
 
     void OnCollisionEnter(Collision c)

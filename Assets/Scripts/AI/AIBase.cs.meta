@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 80150e90e638c1a4787498651e0edb23
-timeCreated: 1484965105
+timeCreated: 1485054415
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - deathrattle: {fileID: 164936, guid: 954b06dee42f85c44b054aecc286d350, type: 2}
+  - Healthbar: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

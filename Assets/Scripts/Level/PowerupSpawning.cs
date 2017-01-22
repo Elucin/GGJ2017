@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PowerupSpawning : MonoBehaviour {
 
-    const float SPAWN_Y = 0.6f;
+    const float SPAWN_Y = 0.8f;
 
     float spawnTimer;
     float spawnDelay;
